@@ -1,7 +1,7 @@
 <p align="center"><img src="MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png"></p>
 <h2>About the project</h2>
 <p>
-A subscription-based service, that allow user to read and stream a big collection of movies, tv shows, magazine and anime in exchange for a subscription.</p>
+A subscription-based service, that allow user to stream a big collection of movies, tv shows, magazine and anime in exchange for a subscription.</p>
 
 <a href="https://drive.google.com/drive/folders/1sIeJEeX398_4ElqYvRKbM5_WmCwwFlCV?usp=sharing"><p>Screenshots</p></a>
 
