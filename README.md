@@ -10,13 +10,15 @@ A subscription-based service, that allow user to stream a big collection of movi
 <li>
 Front-end
 <ul>
-
+<li>HTML/CSS/<a href="https://getbootstrap.com/">Bootstrap</a></li>
+<li>JavaScript( <a href="https://vuejs.org/">Vue.js</a> )</li>
 </ul>
 </li>
 <li>
 Back-end
 <ul>
-
+<li>c# (Asp.net core)</li>
+<li>MySql</li>
 </ul>
 </li>
 </ul>
