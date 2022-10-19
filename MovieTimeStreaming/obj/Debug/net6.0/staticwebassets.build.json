@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cnxoa4nUo7F+KjfUHl0gx4C7JVDTRSl/aJOpLmWYBYg=",
+  "Hash": "ENWoPzY4vC3pKwW0PCj1GCEtN6FT5EcghH2momGmFbM=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/Debug/net6.0/scopedcss/projectbundle/MovieTimeStreaming.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/f_logo_RGB-Blue_100.png",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/f_logo_RGB-Blue_100.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/f_logo_RGB-Blue_100.png"
     },
     {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/gmail-icon.png",
