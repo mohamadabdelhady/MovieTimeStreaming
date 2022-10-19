@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o4zrJ9agee/2h8CpZh0P1uy36zEbAGcnifDKm8lXVl4=",
+  "Hash": "cnxoa4nUo7F+KjfUHl0gx4C7JVDTRSl/aJOpLmWYBYg=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/Debug/net6.0/scopedcss/projectbundle/MovieTimeStreaming.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/gmail-icon.png",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/gmail-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/gmail-icon.png"
     },
     {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/Home.jpg",

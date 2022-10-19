@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Mb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9TaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +33,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Shared/_Layout_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfQXV0aC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Shared/_Layout_Home.cshtml]

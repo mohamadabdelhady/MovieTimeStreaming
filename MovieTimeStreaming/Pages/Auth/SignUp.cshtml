@@ -1,0 +1,45 @@
+﻿@page
+@model MovieTimeStreaming.Pages.Auth.SignUpModel
+@{
+    Layout = "Shared/_Layout_Auth";
+    ViewData["Title"] = "Subscribe";
+}
+<div class="my-form card ms-auto me-auto">
+
+    <form>
+        <div class="form-group mt-2">
+            <input name="name" class="form-control" id="uname-input" placeholder="Name">
+            <span class="invalid-feedback" role="alert">
+                                        <strong></strong>
+                                    </span>
+        </div>
+        <div class="form-group mt-2">
+            <input type="email" class="form-control" id="email-input" placeholder="Email" name="email">
+            <span class="invalid-feedback" role="alert">
+                                        <strong></strong>
+                                    </span>
+        </div>
+        <div class="form-group mt-2">
+            <input type="password" name="password" class="form-control" id="password-input" placeholder="Password" autocomplete="on">
+            <span class="invalid-feedback" role="alert">
+                                        <strong></strong>
+                                    </span>
+        </div>
+        <div class="form-group mt-2">
+            <input type="password" class="form-control" id="confirm-password-input" placeholder="Confirm password" name="password_confirmation" autocomplete="on">
+        </div>
+        <div class="form-group mt-2 mb-2" align="center">
+
+            <button type="submit" class="btn my-btn" style="width: 200px">Sign up</button>
+
+        </div>
+        <p><a class="mt-2" asp-page="/Auth/LogIn">Already have an account? Log in here.</a></p>
+    </form>
+
+    <hr style="background-color: rgba(42, 98, 116, 0.55)">
+    <div align="center">
+        <p style="font-size: large">Or sign up with</p>
+        <a href="/auth/redirect"><img class="signup-icon" src="/Asset/gmail-icon.png"></a>
+         <a href="/auth/redirect"><img class="signup-icon" src="/Asset/f_logo_RGB-Blue_100.png"></a>
+    </div>
+</div>

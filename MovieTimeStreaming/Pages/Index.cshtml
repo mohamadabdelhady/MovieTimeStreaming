@@ -4,14 +4,14 @@
     Layout = "Shared/_Layout_Home";
     ViewData["Title"] = "Movie Time";
 }
-<div class="home-img p-0" style="color: #43B79B">
+<div class="home-img p-0" style="color: white">
     <div class="container py-3">
         <h1 class="display-4 fw-bold">Welcome</h1>
         <p class="lead">Movie Time is subscription based service for streaming media online.</p>
         <hr class="my-4">
         <p>Subscribe now and enjoy 30 days free trial.</p>
         <p class="lead">
-            <button class="btn my-btn">Subscribe</button>
+            <a asp-page="/Auth/SignUp" class="btn my-btn">Subscribe</a>
         </p>
     </div>
 </div>

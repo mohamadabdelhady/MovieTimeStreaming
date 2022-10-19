@@ -1,0 +1,37 @@
+﻿@page
+@model MovieTimeStreaming.Pages.Auth.LogInModel
+@{
+    Layout = "Shared/_Layout_Auth";
+    ViewData["Title"] = "Log in";
+}
+
+<div class="my-form card ms-auto me-auto" xmlns="http://www.w3.org/1999/html">
+    <form >
+        <div class="form-group mt-2 ">
+            <input name="email" type="email" class="form-control" id="email-input" placeholder="Email">
+            <span class="invalid-feedback" role="alert">
+                <strong></strong>
+            </span>
+        </div>
+        <div class="form-group mt-2">
+            <input name="password" type="password" class="form-control" id="password-input" placeholder="Password" autocomplete="on">
+            <span class="invalid-feedback" role="alert">
+                <strong></strong>
+            </span>
+        </div>
+        <div class="form-group mt-2 mb-2" align="center">
+
+            <button type="submit" class="btn my-btn" style="width: 200px">log in</button>
+
+        </div>
+        <p class="m-1"><a href="">Forgot your password ? click here to reset it</a></p>
+        <p><a class="m-1" asp-page="/Auth/SignUp">Dont have an account? sign up here.</a></p>
+    </form>
+   
+    <hr style="background-color:rgba(42, 98, 116, 0.55);">
+    <div align="center">
+        <p style="font-size: large">Or log in with</p>
+        <a href="/auth/redirect"><img class="signup-icon" src="/Asset/gmail-icon.png"></a>
+        <a href="/auth/redirect"><img class="signup-icon" src="/Asset/f_logo_RGB-Blue_100.png"></a>
+    </div>
+</div>
