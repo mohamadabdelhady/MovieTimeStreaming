@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Migrations" />
-      <Folder Include="Pages\Auth" />
       <Folder Include="Pages\User" />
       <Folder Include="Services" />
     </ItemGroup>

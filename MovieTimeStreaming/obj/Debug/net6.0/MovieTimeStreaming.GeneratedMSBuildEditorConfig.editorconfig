@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9TaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9TaWduVXBDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -43,8 +47,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Shared/_Layout_User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9NYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/_ViewImports.cshtml]
