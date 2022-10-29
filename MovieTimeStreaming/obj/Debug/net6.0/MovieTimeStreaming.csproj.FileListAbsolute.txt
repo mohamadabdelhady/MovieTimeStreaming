@@ -53,3 +53,11 @@
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/MySql.Data.EntityFrameworkCore.dll
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/MySqlConnector.dll
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.MvcApplicationPartsAssemblyInfo.cs
