@@ -5,6 +5,7 @@ global using MovieTimeStreaming.Models;
 global using MovieTimeStreaming.Data;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Identity;
+using MovieTimeStreaming.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,10 +20,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
-        options.SignIn.RequireConfirmedAccount = false
+        options.SignIn.RequireConfirmedAccount = true
     
     )
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
