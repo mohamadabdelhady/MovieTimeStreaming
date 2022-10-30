@@ -6,7 +6,7 @@
 }
 <div class="my-form card ms-auto me-auto">
 
-    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+    <form id="registerForm"  method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group mt-2">
             <input asp-for="Input.UserName" class="form-control" placeholder="Name" autocomplete="username" aria-required="true">
@@ -25,7 +25,7 @@
             <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
         </div>
         <div class="form-group mt-2 mb-2" align="center">
-            <button id="registerSubmit" type="submit" class="btn my-btn" style="width: 200px">Sign up</button>
+            <button type="submit" class="btn my-btn" style="width: 200px">Sign up</button>
         </div>
     </form>
     <p><a class="mt-2" asp-page="/Auth/LogIn">Already have an account? Log in here.</a></p>
