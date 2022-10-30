@@ -56,6 +56,8 @@ namespace MovieTimeStreaming.Pages.Auth
                 {
                     _logger.LogInformation("User created a new account with password.");
                 }
+                
+                //return error if found
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
