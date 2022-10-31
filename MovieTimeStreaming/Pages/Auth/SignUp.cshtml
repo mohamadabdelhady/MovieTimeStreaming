@@ -6,7 +6,7 @@
 }
 <div class="my-form card ms-auto me-auto">
 
-    <form id="registerForm"  method="post">
+    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group mt-2">
             <input asp-for="Input.UserName" class="form-control" placeholder="Name" autocomplete="username" aria-required="true">

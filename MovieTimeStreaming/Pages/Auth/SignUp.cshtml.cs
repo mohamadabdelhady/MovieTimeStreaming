@@ -19,18 +19,22 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<SignUpModel> _logger;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly IUserStore<IdentityUser> _userStore;
+        private readonly IUserEmailStore<IdentityUser> _emailStore;
         // private MyEmailSender _MyEmailSender;
 
-        public SignUpModel(SignInManager<IdentityUser> signInManager,UserManager<IdentityUser> userManager,ILogger<SignUpModel> logger)
+        public SignUpModel(IUserStore<IdentityUser> userStore,SignInManager<IdentityUser> signInManager,UserManager<IdentityUser> userManager,ILogger<SignUpModel> logger)
         {
             _userManager = userManager;
             _logger = logger;
             _signInManager = signInManager;
+            _userStore = userStore;
+            _emailStore = GetEmailStore();
             // _MyEmailSender = MyEmailSender;
         }
         [BindProperty]
         public InputModel Input { get; set; }
-         // public string ReturnUrl { get; set; }
+         public string ReturnUrl { get; set; }
         // public IList<AuthenticationScheme> ExternalLogins { get; set; }
         
         public class InputModel
@@ -56,30 +60,33 @@ namespace MovieTimeStreaming.Pages.Auth
         }
 
         
-        // public async Task OnGetAsync(string returnUrl = null)
-        // {
-        //     ReturnUrl = returnUrl;
-        // }
-        public async Task<IActionResult> OnPostAsync()
+        public async Task OnGetAsync(string returnUrl = null)
         {
-             // returnUrl ??= Url.Content("~/Auth/SignUp");
+            ReturnUrl = returnUrl;
+        }
+        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+        {
+             returnUrl ??= Url.Content("~/Auth/SignUp");
             if (ModelState.IsValid)
             {
                 Debug.WriteLine("two");
-                var user = new IdentityUser { UserName = Input.UserName, Email = Input.Email };
+                // var user = new IdentityUser { UserName = Input.UserName, Email = Input.Email };
+                var user = CreateUser();
+                await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
+                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    // var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    // code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    // var callbackUrl = Url.Page(
-                    //     "/Auth/SignUpConfirmation",
-                    //     pageHandler: null,
-                    //     values: new { userId = user.Id, code = code },
-                    //     protocol: Request.Scheme);
-                    string message = "Hello!</p>Please click the button below to verify your email address";
-                                     // $"<a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                    var callbackUrl = Url.Page(
+                        "/Auth/SignUpConfirmation",
+                        pageHandler: null,
+                        values: new { userId = user.Id, code = code },
+                        protocol: Request.Scheme);
+                    string message = "Hello!</p>Please click the button below to verify your email address"+
+                                     $"<a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
                                      var client = new SmtpClient("smtp.mailtrap.io",587)
                                      {
                                          Credentials = new NetworkCredential("15f40ac89aab5a","a84122b19d4d79"),
@@ -93,12 +100,7 @@ namespace MovieTimeStreaming.Pages.Auth
                                          null,
                                          "text/html"
                                      );
-                                    
-                                      // LinkedResource Link = new LinkedResource("./wwwroot/css/site.css");
-                                      // Link.ContentId = "Wedding";
-                                      // htmlView.LinkedResources.Add(Link);
                                      mailMessage.AlternateViews.Add(htmlView);
-                                     
                                      try
                                      {
                                          client.Send(mailMessage);
@@ -108,16 +110,16 @@ namespace MovieTimeStreaming.Pages.Auth
                                          
                                      }
                                      
-                                     // if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                    // {
-                    //     return RedirectToPage("SignUpConfirmation", 
-                    //         new { email = Input.Email });
-                    // }
-                    // else
-                    // {
-                    //     await _signInManager.SignInAsync(user, isPersistent: false);
-                    //     return LocalRedirect(returnUrl);
-                    // }
+                                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
+                    {
+                        return RedirectToPage("SignUpConfirmation", 
+                            new { email = Input.Email });
+                    }
+                    else
+                    {
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        return LocalRedirect(returnUrl);
+                    }
                 }
                 
                 //return error if found
@@ -127,6 +129,28 @@ namespace MovieTimeStreaming.Pages.Auth
                 }
             }
             return Page();
+        }
+        private IdentityUser CreateUser()
+        {
+            try
+            {
+                return Activator.CreateInstance<IdentityUser>();
+            }
+            catch
+            {
+                throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
+                                                    $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
+                                                    $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
+            }
+        }
+
+        private IUserEmailStore<IdentityUser> GetEmailStore()
+        {
+            if (!_userManager.SupportsUserEmail)
+            {
+                throw new NotSupportedException("The default UI requires a user store with email support.");
+            }
+            return (IUserEmailStore<IdentityUser>)_userStore;
         }
     }
 }
