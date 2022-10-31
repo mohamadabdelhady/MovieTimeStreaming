@@ -9,23 +9,30 @@
     <form method="post">
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
         <div class="form-group mt-2 ">
-            <input name="email" type="email" class="form-control" id="email-input" placeholder="Email">
-            <span class="text-danger">
+            <input asp-for="Input.Email" class="form-control" placeholder="Email" autocomplete="email">
+            <span asp-validation-for="Input.Email" class="text-danger">
                 
             </span>
         </div>
         <div class="form-group mt-2">
-            <input name="password" type="password" class="form-control" id="password-input" placeholder="Password" autocomplete="on" >
-            <span class="text-danger">
+            <input asp-for="Input.Password" class="form-control" placeholder="Password" autocomplete="on" >
+            <span asp-validation-for="Input.Password" class="text-danger">
             </span>
         </div>
-        <div class="form-group mt-2 mb-2" align="center">
+        <div>
+            <div class="checkbox">
+                <label asp-for="Input.RememberMe" class="form-label">
+                    <input class="form-check-input" asp-for="Input.RememberMe" />
+                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                </label>
+            </div>
+            <div class="form-group mt-2 mb-2" align="center">
 
-            <button type="submit" class="btn my-btn" style="width: 200px" value="LogIn">log in</button>
+                <button type="submit" class="btn my-btn" style="width: 200px" value="LogIn">log in</button>
 
-        </div>
-        <p class="m-1"><a href="">Forgot your password ? click here to reset it</a></p>
-        <p><a class="m-1" asp-page="/Auth/SignUp">Dont have an account? sign up here.</a></p>
+            </div>
+            <p class="m-1"><a href="">Forgot your password ? click here to reset it</a></p>
+            <p><a class="m-1" asp-page="/Auth/SignUp">Dont have an account? sign up here.</a></p></div>
     </form>
    
     <hr style="background-color:rgba(42, 98, 116, 0.55);">
@@ -35,3 +42,6 @@
         <a href="/auth/redirect"><img class="signup-icon" src="/Asset/f_logo_RGB-Blue_100.png"></a>
     </div>
 </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

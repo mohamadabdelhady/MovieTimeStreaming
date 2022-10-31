@@ -7,13 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="edf1a380-1efc-4f17-9088-2f8a763de82d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Index.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
@@ -46,7 +44,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2GESQlIDuWgbtMEGLNWWTrVi8p8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -125,7 +123,7 @@
       <workItem from="1667121342025" duration="30204000" />
       <workItem from="1667218040597" duration="1536000" />
       <workItem from="1667232525389" duration="530000" />
-      <workItem from="1667241424457" duration="7097000" />
+      <workItem from="1667241424457" duration="8473000" />
     </task>
     <servers />
   </component>

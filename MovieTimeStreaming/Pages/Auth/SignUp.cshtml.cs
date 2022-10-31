@@ -109,7 +109,8 @@ namespace MovieTimeStreaming.Pages.Auth
                                      }
                                      catch (SmtpException ex)
                                      {
-                                         
+                                         throw new InvalidOperationException(
+                                             "Something went wrong and we couldn't send your email confirmation.");
                                      }
                                      
                                      if (_userManager.Options.SignIn.RequireConfirmedAccount)
