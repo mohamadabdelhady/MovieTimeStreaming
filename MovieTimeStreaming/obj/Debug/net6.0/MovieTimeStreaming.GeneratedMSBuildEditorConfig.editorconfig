@@ -15,8 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Gb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/ForgetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Gb3JnZXRQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Mb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/Auth/SignUp.cshtml]

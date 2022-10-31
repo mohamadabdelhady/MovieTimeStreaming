@@ -14,11 +14,13 @@ html {
 }
 
 body {
+  
   margin-bottom: 0px;
   background-color: #f9fdfa;
   
 }
 main{
+  min-height: 60vh;
   margin-bottom: 60px;
 }
 .my-btn{

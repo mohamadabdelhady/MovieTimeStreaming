@@ -8,15 +8,18 @@
     <list default="true" id="edf1a380-1efc-4f17-9088-2f8a763de82d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/LogIn.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,7 @@
       <workItem from="1667121342025" duration="30204000" />
       <workItem from="1667218040597" duration="1536000" />
       <workItem from="1667232525389" duration="530000" />
-      <workItem from="1667241424457" duration="8473000" />
+      <workItem from="1667241424457" duration="15221000" />
     </task>
     <servers />
   </component>

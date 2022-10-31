@@ -9,11 +9,11 @@
     <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group mt-2">
-            <input asp-for="Input.UserName" class="form-control" placeholder="Name" autocomplete="username" aria-required="true">
+            <input asp-for="Input.UserName" class="form-control" placeholder="Name" autocomplete="on" aria-required="true">
             <span asp-validation-for="Input.UserName" class="text-danger"></span>
         </div>
         <div class="form-group mt-2">
-            <input asp-for="Input.Email" class="form-control" placeholder="Email" autocomplete="email" aria-required="true">
+            <input asp-for="Input.Email" class="form-control" placeholder="Email" autocomplete="username" aria-required="true">
             <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
         <div class="form-group mt-2">
