@@ -1,13 +1,13 @@
 using System.Diagnostics;
 using System.Net;
 using System.Net.Mail;
-using System.Net.Mime;
 using System.Text;
 using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using MovieTimeStreaming.Services;
@@ -39,6 +39,7 @@ namespace MovieTimeStreaming.Pages.Auth
         
         public class InputModel
         {
+            
             [Required]                                
             [Display(Name = "User name")]             
             public string UserName { get; set; }
@@ -60,13 +61,14 @@ namespace MovieTimeStreaming.Pages.Auth
         }
 
         
-        public async Task OnGetAsync(string returnUrl = null)
+        public async Task OnGetAsync(string? returnUrl = null)
         {
             ReturnUrl = returnUrl;
         }
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+        public async Task<IActionResult> OnPostAsync(string? returnUrl = null)
         {
-             returnUrl ??= Url.Content("~/Auth/SignUp");
+            Debug.WriteLine("one");
+             returnUrl ??= Url.Content("~/");
             if (ModelState.IsValid)
             {
                 Debug.WriteLine("two");
@@ -86,7 +88,7 @@ namespace MovieTimeStreaming.Pages.Auth
                         values: new { userId = user.Id, code = code },
                         protocol: Request.Scheme);
                     string message = "Hello!</p>Please click the button below to verify your email address"+
-                                     $"<a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
+                                     $" <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
                                      var client = new SmtpClient("smtp.mailtrap.io",587)
                                      {
                                          Credentials = new NetworkCredential("15f40ac89aab5a","a84122b19d4d79"),
@@ -96,7 +98,7 @@ namespace MovieTimeStreaming.Pages.Auth
                                      MailMessage mailMessage=new MailMessage("MovieTime@example.com", Input.Email,"Email Verification",message);
                                      
                                      AlternateView htmlView = AlternateView.CreateAlternateViewFromString(
-                                         $"<div style=margin:10px;padding:10px'><img src='https://raw.githubusercontent.com/mohamadabdelhady/MovieTimeStreaming/main/MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png'><br><p class='m-2 p-2'>{message}</p></div><div class='m-2 p-2'><button class='btn' style='background-color: #2A6274; color: white;' onclick='window.location.href='''>Verify email</button><div>",
+                                         $"<div style=margin:10px;padding:10px'><img src='https://raw.githubusercontent.com/mohamadabdelhady/MovieTimeStreaming/main/MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png'><br><p class='m-2 p-2'>{message}</p></div>",
                                          null,
                                          "text/html"
                                      );
@@ -128,12 +130,17 @@ namespace MovieTimeStreaming.Pages.Auth
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+            string allErrors = string.Join("; ", ModelState.Values
+                .SelectMany(x => x.Errors)
+                .Select(x => x.ErrorMessage));
+             Debug.WriteLine(allErrors);
             return Page();
         }
         private IdentityUser CreateUser()
         {
             try
             {
+                Debug.WriteLine("three");
                 return Activator.CreateInstance<IdentityUser>();
             }
             catch

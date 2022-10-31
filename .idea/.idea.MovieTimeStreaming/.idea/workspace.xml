@@ -5,7 +5,21 @@
     <projectFile profileName="MovieTimeStreaming">MovieTimeStreaming/MovieTimeStreaming.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf1a380-1efc-4f17-9088-2f8a763de82d" name="Changes" comment="" />
+    <list default="true" id="edf1a380-1efc-4f17-9088-2f8a763de82d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +29,24 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e578efc7a745cf334c616884612bd72a3ba09bf099d2ac56b7d8b19c53ed494f/ConfigureHostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2GESQlIDuWgbtMEGLNWWTrVi8p8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -36,8 +64,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/mohamad/Desktop/WebApp1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Inspections-C++",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,6 +122,10 @@
       <workItem from="1666978284880" duration="5157000" />
       <workItem from="1666983609192" duration="67000" />
       <workItem from="1667032514731" duration="13813000" />
+      <workItem from="1667121342025" duration="30204000" />
+      <workItem from="1667218040597" duration="1536000" />
+      <workItem from="1667232525389" duration="530000" />
+      <workItem from="1667241424457" duration="7097000" />
     </task>
     <servers />
   </component>
@@ -112,6 +146,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary" memberName="ErrorCount" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
