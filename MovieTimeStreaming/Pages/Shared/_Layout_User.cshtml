@@ -1,3 +1,7 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +22,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
-                
+                 <div class="main-menu" asp-area="Auth">
+                     <a href="" class="main-btn" onclick="event.preventDefault(); view_menu();">
+                         <div>
+                             @{var user = await UserManager.FindByNameAsync(User.Identity.Name);}
+
+                             <p> <img src="@user.ProfileImage" id="userAvatar"><i class="arrow down"></i></p>
+                         </div>
+                     </a>
+                     <div class="menu-content" id="menu-content">
+                                     <br>
+                                     <p class="ms-3">@user.UserName</p><hr>
+                                     <a class="dropdown-item" href="">Bookmark list</a>
+                                     <a class="dropdown-item" href="">Settings</a>
+                                     <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="ml-1">Sign out</span></a>
+                                                    <form id="logout-form"  class="form-inline" asp-page="/Auth/LogOut" method="post" >
+                                                    </form>
+                                     <br>
+                                 </div>
             </div>
-        </div>
+            </div></div>
     </nav>
 </header>
 <div class="container-fluid p-0">
@@ -38,6 +59,18 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script>
+  function view_menu(){
+
+        document.getElementById('menu-content').classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        const $trigger = $(".main-btn");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            document.getElementById("menu-content").classList.remove("show");
+        }
+    }
+</script>
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>

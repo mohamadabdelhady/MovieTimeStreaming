@@ -9,11 +9,11 @@ namespace MovieTimeStreaming.Pages.Auth
 {
     public class LogInModel : PageModel
     {
-         private readonly SignInManager<IdentityUser> _signInManager;
+         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LogInModel> _logger;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public LogInModel(SignInManager<IdentityUser> signInManager, ILogger<LogInModel> logger,UserManager<IdentityUser>userManager)
+        public LogInModel(SignInManager<ApplicationUser> signInManager, ILogger<LogInModel> logger,UserManager<ApplicationUser>userManager)
         {
             _signInManager = signInManager;
             _logger = logger;

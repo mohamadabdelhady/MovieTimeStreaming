@@ -13,10 +13,10 @@ namespace MovieTimeStreaming.Pages.Auth
 {
     public class ForgetPasswordModel : PageModel
     {
-       private readonly UserManager<IdentityUser> _userManager;
+       private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
 
-        public ForgetPasswordModel(UserManager<IdentityUser> userManager, IEmailSender emailSender)
+        public ForgetPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
         {
             _userManager = userManager;
             _emailSender = emailSender;

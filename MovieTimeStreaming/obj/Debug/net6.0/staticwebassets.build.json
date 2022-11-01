@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "upv2aSyd2mZT/K6ryLVNDRQL8BNBA+Y8qrNC0nB4u/g=",
+  "Hash": "2GMzRBdzZNemp5X73TBqn12N2fqpCFdSOSf4pyrNEn4=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Asset/MovieTimeLogo.png"
+    },
+    {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/UserProfiles/user_default.png",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/UserProfiles/user_default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/UserProfiles/user_default.png"
     },
     {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/css/site.css",

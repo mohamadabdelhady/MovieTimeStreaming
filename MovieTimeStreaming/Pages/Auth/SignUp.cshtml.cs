@@ -16,14 +16,14 @@ namespace MovieTimeStreaming.Pages.Auth
 {
     public class SignUpModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<SignUpModel> _logger;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly IUserStore<IdentityUser> _userStore;
-        private readonly IUserEmailStore<IdentityUser> _emailStore;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IUserStore<ApplicationUser> _userStore;
+        private readonly IUserEmailStore<ApplicationUser> _emailStore;
         // private MyEmailSender _MyEmailSender;
 
-        public SignUpModel(IUserStore<IdentityUser> userStore,SignInManager<IdentityUser> signInManager,UserManager<IdentityUser> userManager,ILogger<SignUpModel> logger)
+        public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger)
         {
             _userManager = userManager;
             _logger = logger;
@@ -72,7 +72,7 @@ namespace MovieTimeStreaming.Pages.Auth
             if (ModelState.IsValid)
             {
                 Debug.WriteLine("two");
-                // var user = new IdentityUser { UserName = Input.UserName, Email = Input.Email };
+                // var user = new ApplicationUser { UserName = Input.UserName, Email = Input.Email };
                 var user = CreateUser();
                 await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -137,28 +137,28 @@ namespace MovieTimeStreaming.Pages.Auth
              Debug.WriteLine(allErrors);
             return Page();
         }
-        private IdentityUser CreateUser()
+        private ApplicationUser CreateUser()
         {
             try
             {
                 Debug.WriteLine("three");
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<ApplicationUser>();
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
-                                                    $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
+                throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
+                                                    $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
                                                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
-        private IUserEmailStore<IdentityUser> GetEmailStore()
+        private IUserEmailStore<ApplicationUser> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<IdentityUser>)_userStore;
+            return (IUserEmailStore<ApplicationUser>)_userStore;
         }
     }
 }

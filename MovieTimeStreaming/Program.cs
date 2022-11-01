@@ -1,7 +1,7 @@
 global using System.ComponentModel.DataAnnotations;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using Microsoft.EntityFrameworkCore;
-global using MovieTimeStreaming.Models;
+// global using MovieTimeStreaming.Models;
 global using MovieTimeStreaming.Data;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Identity;
@@ -19,7 +19,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
         options.SignIn.RequireConfirmedAccount = true
     
     )
@@ -43,6 +43,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapRazorPages();
 

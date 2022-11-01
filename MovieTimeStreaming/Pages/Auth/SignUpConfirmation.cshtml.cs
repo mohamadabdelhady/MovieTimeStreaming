@@ -9,9 +9,9 @@ namespace MovieTimeStreaming.Pages.Auth
 {
     public class SignUpConfirmationModel : PageModel
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public SignUpConfirmationModel(UserManager<IdentityUser> userManager)
+        public SignUpConfirmationModel(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
         }
