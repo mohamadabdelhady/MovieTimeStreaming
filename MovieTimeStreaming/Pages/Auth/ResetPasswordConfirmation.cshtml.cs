@@ -7,6 +7,7 @@ namespace MovieTimeStreaming.Pages.Auth
     {
         public void OnGet()
         {
+            
         }
     }
 }

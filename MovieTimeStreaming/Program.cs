@@ -5,7 +5,6 @@ global using Microsoft.EntityFrameworkCore;
 global using MovieTimeStreaming.Data;
 using Google.Protobuf.WellKnownTypes;
 using Microsoft.AspNetCore.Identity;
-using MovieTimeStreaming.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,10 +20,19 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
         options.SignIn.RequireConfirmedAccount = true
-    
     )
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Auth/Login";
+});
+
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.AllowAnonymousToFolder("/Auth");
+    options.Conventions.AuthorizeFolder("/User");
+});
 
 var app = builder.Build();
 

@@ -61,3 +61,4 @@
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
 /home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/Debug/net6.0/MovieTimeStreaming.MvcApplicationPartsAssemblyInfo.cs
+/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/bin/Debug/net6.0/Pages/User/Web.config

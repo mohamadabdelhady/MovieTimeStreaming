@@ -14,22 +14,14 @@ namespace MovieTimeStreaming.Pages.Auth
             _signInManager = signInManager;
             _logger = logger;
         }
-
+        
+        
+        
         public async Task<IActionResult> OnPost()
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");
             return Redirect("/");
-            // if (returnUrl != null)
-            // {
-            //     return LocalRedirect(returnUrl);
-            // }
-            // else
-            // {
-            //     // This needs to be a redirect so that the browser performs a new
-            //     // request and the identity for the user gets updated.
-            //     return RedirectToPage();
-            // }
         }
     }
 }

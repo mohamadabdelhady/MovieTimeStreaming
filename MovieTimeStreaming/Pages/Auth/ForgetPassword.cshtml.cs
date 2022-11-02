@@ -33,6 +33,8 @@ namespace MovieTimeStreaming.Pages.Auth
             public string Email { get; set; }
         }
 
+        
+
         public async Task<IActionResult> OnPostAsync()
         {
             if (ModelState.IsValid)
