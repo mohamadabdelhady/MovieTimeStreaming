@@ -82,7 +82,7 @@ a:hover{
 }
 
 .arrow {
-  border: solid black;
+  border: solid #2F4858;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -94,11 +94,11 @@ a:hover{
 }
 .menu-content{
   display: none;
-  border: 1px solid #e1cfa9;
+  border: 1px solid rgba(42, 98, 116, 0.55);
   border-radius:5%;
   position: absolute;
   right: 0;
-  background-color: #f1f1f1;
+  background-color: #f9fdfa;
   padding: 5px;
 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -113,4 +113,11 @@ a:hover{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.navCenter a{
+  border-right: 2px solid #2A6274;
+  color: #2A6274;
+}
+.navCenter a:hover {
+  color: #1F7E8A;
 }

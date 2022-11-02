@@ -79,8 +79,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/bookmarkList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9ib29rbWFya0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9jYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9NYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9wcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/searchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9zZWFyY2hSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9zZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/User/videoPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci92aWRlb1BsYXllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/Pages/_LoginPartial.cshtml]
