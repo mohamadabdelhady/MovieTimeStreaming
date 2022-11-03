@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2GMzRBdzZNemp5X73TBqn12N2fqpCFdSOSf4pyrNEn4=",
+  "Hash": "I120z647Gufk1dNdpfcry1wW2EKGguI98IMAIA4bB2Q=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1071,6 +1071,40 @@
       "OriginalItemSpec": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/Debug/net6.0/scopedcss/projectbundle/MovieTimeStreaming.bundle.scp.css"
     },
     {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/Anime-banner.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/Anime-banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/Anime-banner.jpg"
+    },
+    {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/Documentaries-banner.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/Documentaries-banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/Documentaries-banner.jpg"
+    },
+    {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/f_logo_RGB-Blue_100.png",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
@@ -1122,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot/Asset/Home.jpg"
     },
     {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/Movies-banner.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/Movies-banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/Movies-banner.jpg"
+    },
+    {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
@@ -1137,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Asset/MovieTimeLogo.png"
+    },
+    {
+      "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/Tv shows-banner.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/Tv shows-banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/Tv shows-banner.jpg"
     },
     {
       "Identity": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/wwwroot/Asset/UserProfiles/user_default.png",

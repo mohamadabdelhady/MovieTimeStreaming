@@ -5,8 +5,10 @@ namespace MovieTimeStreaming.Pages.User
 {
     public class categoryModel : PageModel
     {
-        public void OnGet()
+        public string selectedCategory { get; set; }
+        public void OnGet(string category)
         {
+            selectedCategory = category is not ("Movies" or "Tv Shows" or "Documentaries" or "Anime") ? "Movies" : category;
         }
     }
 }
