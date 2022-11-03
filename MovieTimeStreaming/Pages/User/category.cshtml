@@ -2,7 +2,7 @@
 @model MovieTimeStreaming.Pages.User.categoryModel
 @{
     Layout = "Shared/_Layout_User";
-    ViewData["Title"] = "Main";
+    ViewData["Title"] = Model.selectedCategory+" category";
 }
 <div class="banner-img p-0" style="background-image: url('/Asset/@Model.selectedCategory-banner.jpg')">
     <div class="container py-3">
