@@ -10,7 +10,10 @@
     <title>@ViewData["Title"] - MovieTimeStreaming</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/settings.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/MovieTimeStreaming.styles.css" asp-append-version="true"/>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
 <header>
@@ -32,7 +35,7 @@
                     <div class="menu-content" id="menu-content">
                         <br>
                         <p class="ms-3 user-name">@user.UserName</p><hr>
-                        <a class="dropdown-item" asp-page="profile">My profile</a>
+                        @* <a class="dropdown-item" asp-page="profile">My profile</a> *@
                         <a class="dropdown-item" asp-page="bookmarkList">Bookmark list</a>
                         <a class="dropdown-item" asp-page="settings">Settings</a>
                         <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="ml-1">Sign out</span></a>
