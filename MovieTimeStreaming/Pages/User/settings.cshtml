@@ -1,4 +1,7 @@
 ﻿@page
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
 @model MovieTimeStreaming.Pages.User.settingsModel
 @{
     Layout = "Shared/_Layout_User";
@@ -10,10 +13,10 @@
 	<div class="profile-tab-nav border-right">
 		<div class="p-4">
 			<div class="img-circle text-center mb-3">
-				
-				<img src="@Model.userImg" alt="User Image" class="shadow userImg">
+				@{var CurrentUser = UserManager.GetUserAsync(User);}
+				<img src="@CurrentUser.Result.ProfileImage" alt="User Image" class="shadow userImg">
 			</div>
-			<h4 class="text-center">@Model.userName</h4>
+			<h4 class="text-center">@CurrentUser.Result.UserName</h4>
 		</div>
 		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			<a class="nav-link active show" id="account-tab" v-on:click.prevent="selectTap('account-tab')" href="#account" role="tab" aria-controls="account" aria-selected="true">
@@ -39,41 +42,45 @@
 		</div>
 	</div>
 	<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+		
 		<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+			<form method="post" asp-page-handler="Account" enctype="multipart/form-data">
 			<h3 class="mb-4">Account Settings</h3>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Name</label>
-						<input type="text" class="form-control" value="@Model.userName">
+						<input type="text" asp-for="newName" class="form-control" value="@CurrentUser.Result.UserName">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Email</label>
-						<input type="text" class="form-control" value="@Model.userEmail">
+						<input type="text" asp-for="newEmail" class="form-control" value="@CurrentUser.Result.Email">
 					</div>
 				</div>
 				<div class="col-md-6">
-                					<div class="form-group">
-                						<label>Profile image</label>
-	                                    @* <input type="text" class="form-control" value="kiranacharya287@gmail.com"> *@
-	                                    <button class="ms-1 btn my-btn fa fa-paperclip"></button>
-                					</div>
-                				</div>
+					<div class="form-group">
+						<label>Profile image</label>
+						<button class="ms-1 btn my-btn fa fa-paperclip" onclick="event.preventDefault(); document.getElementById('new-img').click();"></button>
+						<input type="file" class="form-control" id="new-img" asp-for="newImg" accept="image/*" hidden>
+					</div>
+				</div>
 			</div>
 			<div>
 				<button class="btn my-btn">Update</button>
 				<button class="btn btn-light">Cancel</button>
 			</div>
+			</form>
 		</div>
+
 		<div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
 			<h3 class="mb-4">Password Settings</h3>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Old password</label>
-						<input type="password" class="form-control" >
+						<input type="password" class="form-control">
 					</div>
 				</div>
 			</div>
@@ -123,10 +130,12 @@
 				</div>
 			</div>
 			<div>
-				<button class="btn my-btn">Update</button>
+				<button type="submit" class="btn my-btn">Update</button>
 				<button class="btn btn-light">Cancel</button>
 			</div>
+			
 		</div>
+		
 		<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
 			<h3 class="mb-4">Application Settings</h3>
 			<div class="row">
@@ -139,7 +148,7 @@
 							</label>
 						</div>
 						<div class="form-check">
-							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+							<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
 							<label class="form-check-label" for="defaultCheck2">
 								Lorem ipsum dolor sit.
 							</label>
@@ -164,7 +173,7 @@
 			</div>
 			<div class="form-group">
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="notification2" >
+					<input class="form-check-input" type="checkbox" value="" id="notification2">
 					<label class="form-check-label" for="notification2">
 						hic nesciunt repellat perferendis voluptatum totam porro eligendi.
 					</label>
@@ -172,7 +181,7 @@
 			</div>
 			<div class="form-group">
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="notification3" >
+					<input class="form-check-input" type="checkbox" value="" id="notification3">
 					<label class="form-check-label" for="notification3">
 						commodi fugiat molestiae tempora corporis. Sed dignissimos suscipit
 					</label>
@@ -189,7 +198,6 @@
 
 <script>
 const { createApp } = Vue
-    
       createApp({
         data() {
           return {

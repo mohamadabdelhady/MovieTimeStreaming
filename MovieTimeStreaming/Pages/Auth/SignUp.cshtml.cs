@@ -20,7 +20,6 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
-        // private MyEmailSender _MyEmailSender;
 
         public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger)
         {
@@ -29,7 +28,6 @@ namespace MovieTimeStreaming.Pages.Auth
             _signInManager = signInManager;
             _userStore = userStore;
             _emailStore = GetEmailStore();
-            // _MyEmailSender = MyEmailSender;
         }
         [BindProperty]
         public InputModel Input { get; set; }

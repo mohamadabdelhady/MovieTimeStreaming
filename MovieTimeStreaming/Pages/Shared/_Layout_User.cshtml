@@ -28,13 +28,13 @@
                 <div class="main-menu" asp-area="Auth">
                     <a href="" class="main-btn" onclick="event.preventDefault(); view_menu();">
                         <div>
-                            @{var user = await UserManager.FindByNameAsync(User.Identity.Name);}
-                            <p> <img src="@user.ProfileImage" id="userAvatar"><i class="arrow down"></i></p>
+                            @{var CurrentUser = UserManager.GetUserAsync(User);}
+                            <p> <img src="@CurrentUser.Result.ProfileImage" id="userAvatar"><i class="arrow down"></i></p>
                         </div>
                     </a>
                     <div class="menu-content" id="menu-content">
                         <br>
-                        <p class="ms-3 user-name">@user.UserName</p><hr>
+                        <p class="ms-3 user-name">@CurrentUser.Result.UserName</p><hr>
                         @* <a class="dropdown-item" asp-page="profile">My profile</a> *@
                         <a class="dropdown-item" asp-page="bookmarkList">Bookmark list</a>
                         <a class="dropdown-item" asp-page="settings">Settings</a>
