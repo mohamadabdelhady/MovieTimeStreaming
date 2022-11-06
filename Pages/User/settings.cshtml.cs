@@ -18,23 +18,39 @@ namespace MovieTimeStreaming.Pages.User
         {
             _userManager = userManager;
         }
+
         [Authorize]
         public async Task OnPostAccount()
         {
             var user = _userManager.GetUserAsync(User);
             var currentUser = await _userManager.FindByIdAsync(user.Result.Id);
-            
-            if (newName!=user.Result.UserName)
+
+            if (newName != user.Result.UserName)
             {
                 currentUser.UserName = newName;
-                var resultForName=await _userManager.UpdateAsync(currentUser);
+                var resultForName = await _userManager.UpdateAsync(currentUser);
             }
-            else if (newEmail!=user.Result.Email)
+
+            if (newEmail != user.Result.Email)
             {
                 currentUser.Email = newEmail;
-                var resultForEmail=await _userManager.UpdateAsync(currentUser);
+                var resultForEmail = await _userManager.UpdateAsync(currentUser);
             }
-            
+
+            if (newImg != null)
+            {
+                foreach (var image in newImg)
+                {
+                    if (image.Length > 0 && image.Length!=2097152)
+                    {
+                        var filePath = Path.GetTempFileName();
+
+                        await using var stream = System.IO.File.Create(filePath);
+                        await image.CopyToAsync(stream);
+                        break;
+                    }
+                }
+            }
         }
     }
 }
