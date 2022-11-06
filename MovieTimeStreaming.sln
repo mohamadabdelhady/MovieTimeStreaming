@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTimeStreaming", "MovieTimeStreaming\MovieTimeStreaming.csproj", "{E4388899-4A67-49DD-97F9-8DD7B4ED61A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTimeStreaming", "MovieTimeStreaming.csproj", "{E4388899-4A67-49DD-97F9-8DD7B4ED61A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

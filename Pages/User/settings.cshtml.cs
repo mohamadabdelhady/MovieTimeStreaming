@@ -39,16 +39,12 @@ namespace MovieTimeStreaming.Pages.User
 
             if (newImg != null)
             {
-                foreach (var image in newImg)
+                if (newImg.Length > 0 && newImg.Length!=2097152)
                 {
-                    if (image.Length > 0 && image.Length!=2097152)
-                    {
-                        var filePath = Path.GetTempFileName();
-
-                        await using var stream = System.IO.File.Create(filePath);
-                        await image.CopyToAsync(stream);
-                        break;
-                    }
+                    var filePath = Path.Combine("../Asset/UserProfiles/", 
+                        Path.GetRandomFileName());
+                    await using var stream = System.IO.File.Create(filePath);
+                    await newImg.CopyToAsync(stream);
                 }
             }
         }
