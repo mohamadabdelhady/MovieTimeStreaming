@@ -1,4 +1,4 @@
-<p align="center"><img src="MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png"></p>
+<p align="center"><img src="wwwroot/Asset/MovieTimeLogo.png"></p>
 <h2>About the project</h2>
 <p>
 A subscription-based service, that allow user to stream a big collection of movies, tv shows, documentaries and anime in exchange for a subscription.</p>
