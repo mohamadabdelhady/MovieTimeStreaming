@@ -13,10 +13,9 @@
 	<div class="profile-tab-nav border-right">
 		<div class="p-4">
 			<div class="img-circle text-center mb-3">
-				@{var CurrentUser = UserManager.GetUserAsync(User);}
-				<img src="@CurrentUser.Result.ProfileImage" alt="User Image" class="shadow userImg">
+				<img src="@Model.userImage" alt="User Image" class="shadow userImg">
 			</div>
-			<h4 class="text-center">@CurrentUser.Result.UserName</h4>
+			<h4 class="text-center">@Model.userName</h4>
 		</div>
 		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			<a class="nav-link active show" id="account-tab" v-on:click.prevent="selectTap('account-tab')" href="#account" role="tab" aria-controls="account" aria-selected="true">
@@ -50,13 +49,13 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Name</label>
-						<input type="text" asp-for="newName" class="form-control" value="@CurrentUser.Result.UserName">
+						<input type="text" name="newName" class="form-control" value="@Model.userName">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Email</label>
-						<input type="text" asp-for="newEmail" class="form-control" value="@CurrentUser.Result.Email">
+						<input type="text" name="newEmail" class="form-control" value="@Model.userEmail">
 					</div>
 				</div>
 				<div class="col-md-6">

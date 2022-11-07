@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/MovieTimeStreaming.csproj": {}
+    "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj": {}
   },
   "projects": {
-    "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/MovieTimeStreaming.csproj": {
+    "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/MovieTimeStreaming.csproj",
+        "projectUniqueName": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
         "projectName": "MovieTimeStreaming",
-        "projectPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/MovieTimeStreaming.csproj",
+        "projectPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
         "packagesPath": "/home/mohamad/.nuget/packages/",
-        "outputPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/obj/",
+        "outputPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mohamad/.nuget/NuGet/NuGet.Config"

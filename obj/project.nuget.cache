@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CKi2LYQlrevrBpxPNcejT4HKlCyjikj/sKnOtfxEA+DNhFGwb5eCrYCoGNL74gzcb9IJa6Pz87yKEK97PjJo1w==",
+  "dgSpecHash": "DOVRnKvVPr7spAePOEZVXyGVGMjnRx19OnX6D8IuafnCHTFAeL36T8GV4ATV1ysOUxXoQrCS1ICtIUJabtpwZA==",
   "success": true,
-  "projectFilePath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming/MovieTimeStreaming.csproj",
+  "projectFilePath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
   "expectedPackageFiles": [
     "/home/mohamad/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",
     "/home/mohamad/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
