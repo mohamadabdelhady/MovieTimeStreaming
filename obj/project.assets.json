@@ -2928,11 +2928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
+      "projectUniqueName": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
       "projectName": "MovieTimeStreaming",
-      "projectPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
+      "projectPath": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
       "packagesPath": "/home/mohamad/.nuget/packages/",
-      "outputPath": "/home/mohamad/My projects/Web Development/MovieTimeStreaming/obj/",
+      "outputPath": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mohamad/.nuget/NuGet/NuGet.Config"

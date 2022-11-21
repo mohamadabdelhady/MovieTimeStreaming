@@ -8,117 +8,117 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MovieTimeStreaming
 build_property.RootNamespace = MovieTimeStreaming
-build_property.ProjectDir = /home/mohamad/My projects/Web Development/MovieTimeStreaming/
+build_property.ProjectDir = /mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/mohamad/My projects/Web Development/MovieTimeStreaming
+build_property.MSBuildProjectDirectory = /mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/ForgetPassword.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Gb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/ForgetPasswordConfirmation.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ForgetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Gb3JnZXRQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/LogIn.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Mb2dJbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/LogOut.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Mb2dPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/ResetPassword.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/ResetPasswordConfirmation.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/SignUp.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9TaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/SignUpConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9TaWduVXBDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Error.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Index.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Privacy.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_Auth.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_Auth.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfQXV0aC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_Home.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_User.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout_User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXRfVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_StatusMessage.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19TdGF0dXNNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/bookmarkList.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/bookmarkList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9ib29rbWFya0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/category.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9jYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/Main.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9NYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/profile.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9wcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/searchResults.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/searchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9zZWFyY2hSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/settings.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9zZXR0aW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/User/videoPlayer.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/User/videoPlayer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci92aWRlb1BsYXllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/_LoginPartial.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xvZ2luUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/_ViewImports.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/_ViewStart.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/mohamad/My projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout.cshtml]
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x5gexbr6rn
