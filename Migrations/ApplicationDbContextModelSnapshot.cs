@@ -219,11 +219,14 @@ namespace MovieTimeStreaming.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("MovieTimeStreaming.Models.Anime", b =>
+            modelBuilder.Entity("MovieTimeStreaming.Models.Media", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Genre")
                         .IsRequired()
@@ -246,73 +249,17 @@ namespace MovieTimeStreaming.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.HasKey("ID");
-
-                    b.ToTable("Anime");
-                });
-
-            modelBuilder.Entity("MovieTimeStreaming.Models.Documentaries", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Genre")
+                    b.Property<string>("mediaImg")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<float>("Rating")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("ReleaseDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("about")
+                    b.Property<string>("mediaType")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("ID");
 
-                    b.ToTable("Documentaries");
-                });
-
-            modelBuilder.Entity("MovieTimeStreaming.Models.Movies", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Genre")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<float>("Rating")
-                        .HasColumnType("float");
-
-                    b.Property<DateTime>("ReleaseDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("about")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Movies");
+                    b.ToTable("Media");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -11,10 +11,15 @@
         <p>.</p>
     </div>
 </div>
-<div id="app">
-    <div>
-        
-    </div>
+<div id="app" class="d-flex justify-content-center m-5">
+    <span class="card ms-2 mt-2" v-for="(item, index) in allVideos" style="width: 25rem">
+        <span class="card-body">
+            <img src="" />
+            <p>{{item['title']}}</p>
+            <p>{{item['Genre']}}</p>
+            <p>{{item['mediaType']}}</p>
+        </span>
+    </span>
 </div>
 <script>
 const { createApp } = Vue
@@ -22,8 +27,28 @@ const { createApp } = Vue
       createApp({
         data() {
           return {
-            
+            allVideos:[],
+            page:1,
+            last_page:false,
           }
-        }
+        },
+        methods: {
+            getAllVideos()
+            {
+                 axios.get('/api/Media/getAll?page='+this.page).then(response=> {
+                                $.each(response.data, (key, v) => {
+                                    this.allVideos.push(v);
+                                    if (response.data.current_page==response.data.last_page){
+                                        this.last_page=true;
+                                    }
+                
+                                });
+                            })
+                                    this.page++;
+            }
+            },
+            created(){
+            this.getAllVideos();
+            },
       }).mount('#app')
 </script>

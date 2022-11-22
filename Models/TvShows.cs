@@ -2,6 +2,8 @@ namespace MovieTimeStreaming.Models
 {
     public class TvShows
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }

@@ -47,12 +47,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+builder.Services.AddControllers();
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-
+app.MapControllers();
 app.MapRazorPages();
-
+app.MapControllers();
 app.Run();

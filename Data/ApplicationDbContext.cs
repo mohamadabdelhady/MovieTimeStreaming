@@ -11,10 +11,11 @@ namespace MovieTimeStreaming.Data
         {
             
         }
-        public DbSet<Anime> Anime { get; set; }
-        public DbSet<Documentaries> Documentaries { get; set; }
-        public DbSet<Movies> Movies { get; set; }
-        public DbSet<Anime> TvShows { get; set; }
+        
+
+
+        public DbSet<Media> Media { get; set; }
+        // public DbSet<TvShows> TvShows { get; set; }
         
     }
 }
