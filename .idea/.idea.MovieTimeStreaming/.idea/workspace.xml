@@ -7,18 +7,20 @@
   <component name="ChangeListManager">
     <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Media.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Media.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Reviews.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Reviews.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/User/Main.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/Main.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/site.css" afterDir="false" />
     </list>
@@ -120,7 +122,10 @@
       <workItem from="1667809427670" duration="4008000" />
       <workItem from="1668985761101" duration="775000" />
       <workItem from="1669044831457" duration="9881000" />
-      <workItem from="1669110104535" duration="22524000" />
+      <workItem from="1669110104535" duration="22951000" />
+      <workItem from="1669195697378" duration="7016000" />
+      <workItem from="1669202781919" duration="633000" />
+      <workItem from="1669209336277" duration="3295000" />
     </task>
     <servers />
   </component>

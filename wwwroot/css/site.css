@@ -136,3 +136,45 @@ a:hover{
   width: 64px;
   display: none;
 }
+.MediaPosterImg{
+  width: 100%;
+}
+.checked {
+  color: goldenrod;
+}
+@media screen and (max-width: 576px) {
+  .fa-star {
+    font-size: .6rem;
+  }
+
+  .rate {
+    font-size: .6rem;
+  }
+}
+.comment_in{
+  min-height: 100px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  border: 1px solid #f5eee2;
+}
+.comment_in:focus
+{
+  border: 1px solid #565c68;
+}
+.review{
+  background-color: rgba(31, 126, 138, 0.73);
+  border-radius: 1%;
+}
+.my_review{
+  background-color: rgba(31, 126, 138, 0.73);
+  border-radius: 1%;
+}
+.fa-star {
+  font-size: 4vw;
+}
+
+.rate {
+  font-size: 2vw;
+}

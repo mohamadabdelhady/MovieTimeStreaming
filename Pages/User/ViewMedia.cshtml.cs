@@ -15,6 +15,7 @@ namespace MovieTimeStreaming.Pages.User
         public string MediaAbout { get; set; }
         public string MediaImg { get; set; }
         public float rating { get; set; }
+        
 
         public ViewMediaModel(ApplicationDbContext context)
         {
@@ -27,6 +28,7 @@ namespace MovieTimeStreaming.Pages.User
             MediaTitle = MediaItem.Title;
             MediaGenre = MediaItem.Genre;
             MediaAbout = MediaItem.about;
+            MediaType = MediaItem.mediaType;
             MediaImg = MediaItem.mediaImg;
             rating = MediaItem.Rating;
         }

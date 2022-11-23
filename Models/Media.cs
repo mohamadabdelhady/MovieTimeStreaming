@@ -4,7 +4,6 @@ namespace MovieTimeStreaming.Models
     public class Media
     {
         [Key]
-        
         public int ID { get; set; }
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }

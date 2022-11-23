@@ -15,7 +15,7 @@ namespace MovieTimeStreaming.Data
 
 
         public DbSet<Media> Media { get; set; }
-        // public DbSet<TvShows> TvShows { get; set; }
+        public DbSet<Reviews> Reviews { get; set; }
         
     }
 }
