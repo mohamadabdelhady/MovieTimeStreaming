@@ -8,18 +8,22 @@
     <div class="container py-3">
         <h1 class="display-4 fw-bold">Wellcome</h1>
         <hr class="my-4">
-        <p>.</p>
+        <p>Here you can view our latest media.</p>
     </div>
 </div>
-<div id="app" class="d-flex justify-content-center m-5">
-    <span class="card ms-2 mt-2" v-for="(item, index) in allVideos" style="width: 25rem">
-        <span class="card-body">
-            <img src="" />
-            <p>{{item['title']}}</p>
-            <p>{{item['Genre']}}</p>
-            <p>{{item['mediaType']}}</p>
+<div id="app">
+    <div id="" class="d-flex flex-wrap justify-content-start m-5">
+        <span class="card ms-2 mt-2" v-for="(item, index) in allVideos" style="width: 15rem">
+            <span class="card-body">
+                <img style="max-width: 100%" :src="item['mediaImg']" alt=""/>
+                <h5 class="">{{item['title']}}</h5>
+                <p class="mb-0">{{item['genre']}}</p>
+                <p class="mb-0">{{item['mediaType']}}</p>
+                <a :href="'ViewMedia?id='+item['id']" class=" btn my-btn" style="width: 90%">watch</a>
+            </span>
         </span>
-    </span>
+    </div>
+    <div class="loader" align="center"><img src="../Asset/film-reel-loader.gif"/></div>
 </div>
 <script>
 const { createApp } = Vue
