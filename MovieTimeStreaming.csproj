@@ -9,6 +9,7 @@
     <ItemGroup>
       <Folder Include="Controllers" />
       <Folder Include="Migrations" />
+      <Folder Include="wwwroot\Asset\MediaPostersImg" />
     </ItemGroup>
 
     <ItemGroup>

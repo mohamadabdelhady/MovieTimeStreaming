@@ -14,6 +14,7 @@ namespace MovieTimeStreaming.Controllers
     public class MediaController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        
 
         public MediaController(ApplicationDbContext context)
         {
@@ -21,10 +22,12 @@ namespace MovieTimeStreaming.Controllers
         }
         [Route("api/Media/getAll")]
         [HttpGet]
-        public async Task<List<Media>> GetAllMedia()
+        public async Task<List<Media>> GetAllMedia([FromQuery(Name = "page")] int page)
         {
-         
-            return _context.Media.OrderBy(x=>x.CreatedAt).Take(10).ToList();
+            var PageNum = page;
+            var count = _context.Media.Count();
+            bool IsLastPage = count - (10 * PageNum) < 0;
+            return _context.Media.OrderBy(x=>x.CreatedAt).Skip((PageNum-1)*10).Take(10).ToList();
         }
     }
 }

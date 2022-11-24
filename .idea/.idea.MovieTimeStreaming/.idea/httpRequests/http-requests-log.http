@@ -1,3 +1,27 @@
+GET https://localhost:7024/api/Media/getAll?page=1
+
+<> 2022-11-24T120753.200.json
+
+###
+
+GET https://localhost:7024/api/Media/getAll
+
+<> 2022-11-24T120415.500.txt
+
+###
+
+GET https://localhost:7024/api/Media/getAll
+
+<> 2022-11-24T113531.500.txt
+
+###
+
+GET https://localhost:7024/api/Media/getAll
+
+<> 2022-11-24T112901.500.txt
+
+###
+
 GET https://localhost:7024/api/review/2/getAll?page=1
 
 <> 2022-11-23T220634.200.json

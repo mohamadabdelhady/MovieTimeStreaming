@@ -1,6 +1,38 @@
 ﻿@page
 @model MovieTimeStreaming.Pages.User.videoPlayerModel
 @{
-    Layout = "Shared/_Layout_User";
+    Layout = "Shared/_Layout_Player";
     ViewData["Title"] = "Main";
 }
+<div class="container">
+
+  <div class="d-flex flex-column justify-content-center mt-5">
+    <div>
+      <video
+        id="@Model.MediaId"
+        class="video-js vjs-theme-fantasy"
+        controls
+        preload="auto"
+        width="854"
+        height="480"
+        poster="@Model.MediaImg"
+        data-setup="{}">
+        <source src="@Model.MediaSrc" type="video/mp4"/>
+        @* <source src="MY_VIDEO.webm" type="video/webm" /> *@
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
+          >
+        </p>
+      </video>
+    </div>
+    <div>
+      <h4 class="mt-2">@Model.MediaTitle</h4>
+      <p>@Model.MediaWatchCount Viewers</p>
+      <span class="me-4"><i class="fa fa-thumbs-up me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaLikes</span>
+       <span><i class="fa fa-thumbs-down me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaDisLikes</span>
+    </div>
+  </div>
+</div>
+

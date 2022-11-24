@@ -16,6 +16,10 @@ namespace MovieTimeStreaming.Models
         public string mediaImg { get; set; }
         
         public DateTime CreatedAt { get; set; }
+        public string MediaSrc { get; set; }
+        public int WatchCount { get; set; } = 0;
+        public int Likes { get; set; } = 0;
+        public int DisLikes { get; set; } = 0;
 
     }
     

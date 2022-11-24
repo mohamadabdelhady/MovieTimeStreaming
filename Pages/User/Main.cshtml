@@ -1,9 +1,11 @@
 ﻿@page
 @model MovieTimeStreaming.Pages.User.MainModel
+
 @{
     Layout = "Shared/_Layout_User";
     ViewData["Title"] = "Main";
 }
+
 <div class="banner-img p-0" style="background-image: url('/Asset/main-banner.jpg')">
     <div class="container py-3">
         <h1 class="display-4 fw-bold">Wellcome</h1>
@@ -19,12 +21,15 @@
                 <h5 class="">{{item['title']}}</h5>
                 <p class="mb-0">{{item['genre']}}</p>
                 <p class="mb-0">{{item['mediaType']}}</p>
-                <a :href="'ViewMedia?id='+item['id']" class=" btn my-btn" style="width: 90%">View</a>
+                <a :href="'ViewMedia?id='+item['id']" class=" btn my-btn" style="width: 90%">View {{item['mediaType']}} page</a>
+                <a :href="'videoPlayer?id='+item['id']" class="btn my-btn mt-2" style="width: 90%">Watch</a>
             </span>
         </span>
     </div>
-    <div class="loader" align="center"><img src="../Asset/film-reel-loader.gif"/></div>
+    
+    <div align="center"><button class="btn my-btn m-auto" v-on:click="getAllVideos" :disabled="last_page">Load more</button></div>
 </div>
+
 <script>
 const { createApp } = Vue
     
@@ -39,17 +44,24 @@ const { createApp } = Vue
         methods: {
             getAllVideos()
             {
+                 document.getElementById("wait").classList.remove("d-none");
                  axios.get('/api/Media/getAll?page='+this.page).then(response=> {
+                     
+                      
+                      // if (response.data==""){
+                      //                                         this.last_page=true;
+                      //                                     }
                                 $.each(response.data, (key, v) => {
                                     this.allVideos.push(v);
-                                    if (response.data.current_page==response.data.last_page){
-                                        this.last_page=true;
-                                    }
+                                   
+                                    
                 
                                 });
+                                 document.getElementById("wait").classList.add("d-none");
                             })
                                     this.page++;
-            }
+            },
+          
             },
             created(){
             this.getAllVideos();

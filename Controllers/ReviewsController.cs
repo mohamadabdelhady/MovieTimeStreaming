@@ -16,18 +16,21 @@ namespace MovieTimeStreaming.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+       
 
-        public ReviewsController(ApplicationDbContext context,UserManager<ApplicationUser> userManager)
+        public ReviewsController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
         }
+
         [Route("getAll")]
         [HttpGet]
-        public async Task<List<Reviews>> GetAllReviews(string id)
+        public async Task<List<Reviews>> GetAllReviews(string id,[FromQuery(Name = "page")] int page)
         {
+            var PageNum = page;
             var users = await _userManager.Users.ToListAsync().ConfigureAwait(false);
-            return _context.Reviews.Where(x=>x.MediaId==id).OrderBy(x=>x.CreatedAt).Take(10).ToList();
+            return _context.Reviews.Where(x => x.MediaId == id).OrderBy(x => x.CreatedAt).Skip((PageNum - 1) * 10).Take(10).ToList();
         }
 
         [Route("get")]
