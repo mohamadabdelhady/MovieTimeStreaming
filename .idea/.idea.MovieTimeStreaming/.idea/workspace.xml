@@ -9,27 +9,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MediaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MediaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ReviewsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ReviewsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Media.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Media.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieTimeStreaming.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieTimeStreaming.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Reviews.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Reviews.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout_Player.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout_Player.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/Main.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/Main.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/Main.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/Main.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/category.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/category.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/category.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/category.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/User/videoPlayer.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/videoPlayer.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/User/videoPlayer.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/videoPlayer.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
@@ -38,26 +27,25 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/MovieTimeStreaming.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/MovieTimeStreaming.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/Asset/Documentaries-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/Asset/MediaStorage/file_example_MP4_480_1_5MG.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/Asset/Movies-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/Asset/Tv Shows-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/17a25bf4cd58852e31b6bc798fef1d6289441360eea1912bf89a9b4fd337a3/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9645d321fe8d42a1118ffc62492ad850e891b8ff24bfa6d49533d2e0e83c6947/Queryable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af5e8f58e0cd43a56f652468b1080bbdbf4276e50cddad25571e6f22556715/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ba6f58113412403d893fdcae63bba449a73aa11d5f9e49f55b28b54abe8b/ParameterExtractingExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,8 +69,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #10">
+  <component name="RunManager" selected=".NET Launch Settings Profile.MovieTimeStreaming">
     <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" requestIdentifier="#10" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" requestIdentifier="#11" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
@@ -132,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #11" />
         <item itemvalue="HTTP Request.generated-requests | #10" />
         <item itemvalue="HTTP Request.generated-requests | #8" />
         <item itemvalue="HTTP Request.generated-requests | #7" />
@@ -159,7 +151,8 @@
       <workItem from="1669285632668" duration="8155000" />
       <workItem from="1669298143613" duration="4286000" />
       <workItem from="1669305639773" duration="13438000" />
-      <workItem from="1669321216964" duration="15966000" />
+      <workItem from="1669321216964" duration="16059000" />
+      <workItem from="1669367827284" duration="19521000" />
     </task>
     <servers />
   </component>
@@ -169,5 +162,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Controllers/MediaController.cs</url>
+          <line>59</line>
+          <properties documentPath="$PROJECT_DIR$/Controllers/MediaController.cs" initialLine="58" containingFunctionPresentation="method 'SetWatchedTime'">
+            <startOffsets>
+              <option value="2311" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2355" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

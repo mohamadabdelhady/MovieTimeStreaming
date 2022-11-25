@@ -1,3 +1,9 @@
+POST https://localhost:7024/api/Media/35/watchedTime
+
+<> 2022-11-25T121254.500.txt
+
+###
+
 GET https://localhost:7024/api/Media/Movie/getAll?page=1
 
 <> 2022-11-24T173436.200.json

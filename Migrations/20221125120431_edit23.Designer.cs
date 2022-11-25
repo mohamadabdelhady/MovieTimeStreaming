@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieTimeStreaming.Data;
 
@@ -10,9 +11,10 @@ using MovieTimeStreaming.Data;
 namespace MovieTimeStreaming.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221125120431_edit23")]
+    partial class edit23
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -318,8 +320,9 @@ namespace MovieTimeStreaming.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<double>("StopTime")
-                        .HasColumnType("double");
+                    b.Property<string>("StopTime")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("UserId")
                         .IsRequired()

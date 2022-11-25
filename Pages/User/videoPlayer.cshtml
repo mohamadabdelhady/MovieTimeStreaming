@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
 @model MovieTimeStreaming.Pages.User.videoPlayerModel
 @{
     Layout = "Shared/_Layout_Player";
@@ -9,7 +11,7 @@
     <div class="d-flex flex-column justify-content-center mt-5">
         <div>
             <video
-                id="@Model.MediaId"
+                id="MyPlayer"
                 class="video-js vjs-theme-fantasy"
                 controls
                 preload="auto"
@@ -30,7 +32,7 @@
         <div>
             <h4 class="mt-2">@Model.MediaTitle</h4>
             <p>@Model.MediaReleaseDate</p>
-            <p>@Model.MediaWatchCount Viewers</p>
+            <p>@Model.MediaWatchCount View</p>
             <span class="me-4"><i class="fa fa-thumbs-up me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaLikes</span>
             <span><i class="fa fa-thumbs-down me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaDisLikes</span>
         </div>
@@ -134,8 +136,41 @@
             </div>
 </div>
 <script >
+
+let duration;
+let tenPercentOfVideo;
+let interval;
+let player=videojs('MyPlayer',
+
+);
+player.on('loadeddata', () => { 
+    duration=player.duration();
+    tenPercentOfVideo=((duration*10)/100);
+  });
+player.on('playing', () => { 
+    interval=setInterval(getWatchedTime,(tenPercentOfVideo)*1000);
+    console.log("fff");
+});
+player.on('seeked', () => {
+    clearInterval(interval);
+    getWatchedTime();
+});
+function getWatchedTime()
+{
+    let currentTime=player.currentTime();
+    const headers = {
+    "Content-Type": "application/x-www-form-urlencoded"
+    }
+    axios.post('/api/Media/@Model.MediaId/watchedTime', {
+                                            watchedTime: currentTime,
+                                            currentUser:"@UserManager.GetUserAsync(User).Result.Id"
+                                        },
+                                        {headers:headers}
+                                        ).then(response => {});
+}
 const { createApp } = Vue
       createApp({
+      
         data() {
             return {
                         AllReviews: [],
@@ -145,7 +180,7 @@ const { createApp } = Vue
                         my_rating: "",
                         user_review: "",
                         my_review: [],
-                       
+                        
                         
                     }
             },

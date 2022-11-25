@@ -1,14 +1,17 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MovieTimeStreaming.Models;
 
 namespace MovieTimeStreaming.Pages.User
 {
     public class videoPlayerModel : PageModel
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
         
         [FromQuery(Name = "id")]
-        public int MediaId { get; set; }
+        public string MediaId { get; set; }
 
         public string MediaTitle { get; set; }
         public string MediaGenre { get; set; }
@@ -21,13 +24,15 @@ namespace MovieTimeStreaming.Pages.User
         public int MediaLikes { get; set; }
         public int MediaDisLikes { get; set; }
         public DateOnly MediaReleaseDate { get; set; }
-        public videoPlayerModel(ApplicationDbContext context)
+        public videoPlayerModel(ApplicationDbContext context,UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
         public void OnGet()
         {
-            var MediaItem=_context.Media.Find(MediaId);
+            var id = int.Parse(MediaId);
+            var MediaItem=_context.Media.Find(id);
             MediaTitle = MediaItem.Title;
             MediaGenre = MediaItem.Genre;
             MediaAbout = MediaItem.about;
@@ -39,7 +44,27 @@ namespace MovieTimeStreaming.Pages.User
             MediaLikes = MediaItem.Likes;
             MediaLikes = MediaItem.DisLikes;
              MediaReleaseDate = MediaItem.ReleaseDate;
+             StartedWatching();
             
+        }
+
+        public void StartedWatching()
+        {
+            var user = _userManager.GetUserAsync(User);
+            var userId = user.Result.Id.ToString();
+            var WatchHistory = _context.WatchHistory.FirstOrDefault(x => x.MediaId == MediaId && x.UserId == userId);
+            if (WatchHistory == null)
+            {
+
+                var watch = new WatchHistory()
+                {
+                    UserId = user.Result.Id,
+                    MediaId = MediaId,
+                    LastWatchDate = DateTime.Now
+                };
+                _context.Entry(watch).State = EntityState.Added;
+                _context.SaveChanges();
+            }
         }
     }
 }
