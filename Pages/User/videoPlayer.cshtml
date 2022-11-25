@@ -6,33 +6,247 @@
 }
 <div class="container">
 
-  <div class="d-flex flex-column justify-content-center mt-5">
-    <div>
-      <video
-        id="@Model.MediaId"
-        class="video-js vjs-theme-fantasy"
-        controls
-        preload="auto"
-        width="854"
-        height="480"
-        poster="@Model.MediaImg"
-        data-setup="{}">
-        <source src="@Model.MediaSrc" type="video/mp4"/>
-        @* <source src="MY_VIDEO.webm" type="video/webm" /> *@
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
-          >
-        </p>
-      </video>
+    <div class="d-flex flex-column justify-content-center mt-5">
+        <div>
+            <video
+                id="@Model.MediaId"
+                class="video-js vjs-theme-fantasy"
+                controls
+                preload="auto"
+                width="854"
+                height="480"
+                poster="@Model.MediaImg"
+                data-setup="{}">
+                <source src="@Model.MediaSrc" type="video/mp4"/>
+                @* <source src="MY_VIDEO.webm" type="video/webm" /> *@
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
+                    >
+                </p>
+            </video>
+        </div>
+        <div>
+            <h4 class="mt-2">@Model.MediaTitle</h4>
+            <p>@Model.MediaReleaseDate</p>
+            <p>@Model.MediaWatchCount Viewers</p>
+            <span class="me-4"><i class="fa fa-thumbs-up me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaLikes</span>
+            <span><i class="fa fa-thumbs-down me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaDisLikes</span>
+        </div>
     </div>
-    <div>
-      <h4 class="mt-2">@Model.MediaTitle</h4>
-      <p>@Model.MediaWatchCount Viewers</p>
-      <span class="me-4"><i class="fa fa-thumbs-up me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaLikes</span>
-       <span><i class="fa fa-thumbs-down me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaDisLikes</span>
-    </div>
-  </div>
+    <div class="mt-5" id="app">
+                <div>
+                    <div>
+                        <div v-if="!my_review.length" class="review p-2">
+                            <p class="usersRate">What did you think of this @Model.MediaType</p>
+                            <span class="mt-2 stars" style="padding-left: 60px;">
+                                <a href="#" class='' id="star_1" @@mouseover="fill_star(1)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(1)">
+                                    <i class="fa fa-star fa-3x"></i>
+                                </a>
+                                <a href="#" class='' id="star_2" @@mouseover="fill_star(2)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(2)">
+                                    <i class="fa fa-star fa-3x"></i>
+                                </a>
+                                <a href="#" class='' id="star_3" @@mouseover="fill_star(3)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(3)">
+                                    <i class="fa fa-star fa-3x"></i>
+                                </a>
+                                <a href="#" class='' id="star_4" @@mouseover="fill_star(4)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(4)">
+                                    <i class="fa fa-star fa-3x"></i>
+                                </a>
+                                <a href="#" class='' id="star_5" @@mouseover="fill_star(5)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(5)">
+                                    <i class="fa fa-star fa-3x"></i>
+                                </a>
+                                <span class="ms-2 Rate">{{my_rating}}/5</span>
+                                <span v-if="my_rating!=''" class="ms-2 rate">
+                                    <a href="#" v-on:click.prevent="clear_rating">Clear rating</a>
+                                </span>
+                            </span>
+                            <div class="mt-3">
+                                <textarea row="10" placeholder=" Write a review (optional)." class="comment_in" v-model="user_review" @@keyup.enter="add_review"></textarea>
+                                <button v-if="edit_review==false" class="btn my-btn" style="height: 40px;" :disabled="user_review==''" v-on:click="add_review">Post</button>
+                                <div v-else>
+                                    <button class="btn" style="height: 40px;" :disabled="user_review==''" v-on:click="update_review">Edit</button>
+                                    <button class="btn ms-2 btn-cancel" style="height: 40px;" :disabled="user_review==''" v-on:click="cancel_edit">Cancel</button>
+                                </div>
+                                <p id="error_post" style="color: firebrick; display: none;">You have to pick a rating to post a review.</p>
+                            </div>
+    
+                        </div>
+                        <div v-else class="my_review p-2" v-for="(review,index) in my_review">
+                            <span class="txtb">Your review</span>
+                            <a href="#">
+                                <span class="pl-1">{{review.name}}</span>
+                            </a>
+                            <span style="float: right;">
+                                <div class="">
+                                    <span class="fa fa-star checked"  v-if="review.userRating>=1"></span>
+                                    <span class="fa fa-star " v-else></span>
+                                    <span class="fa fa-star checked " v-if="review.userRating>=2"></span>
+                                    <span class="fa fa-star " v-else></span>
+                                    <span class="fa fa-star checked " v-if="review.userRating>=3"></span>
+                                    <span class="fa fa-star " v-else></span>
+                                    <span class="fa fa-star checked -" v-if="review.userRating>=4"></span>
+                                    <span class="fa fa-star " v-else></span>
+                                    <span class="fa fa-star checked " v-if="review.userRating>=5"></span>
+                                    <span class="fa fa-star " v-else></span>
+                                    <span class="ms-2 rate">{{review.userRating}}/5</span>
+                                </div>
+                            </span>
+                            <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
+                            <div><a href="/api/review/@Model.MediaId/delete" class="me-3" style="color: #753939">Delete</a><a href="">Edit</a></div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <p class=" mt-4">What other Users think of the @Model.MediaType.</p>
+    
+                    <div class="mt-5">
+                        <p v-if="!AllReviews.length" class="" style="margin-left:50px;">There is no reviews on this @Model.MediaType, be the first one to review it.</p>
+                        <div class="comments" v-for="(review,index) in AllReviews">
+                            <div>
+                                <img src="" class="userAvatar">
+                                <span class="pl-1">{{review.name}}</span>
+                                <span style="float: right;">
+                                    <div>
+                                        <span class="">
+                                            <span class="fa fa-star checked" v-if="review.userRating>=1"></span>
+                                            <span class="fa fa-star " v-else></span>
+                                            <span class="fa fa-star checked " v-if="review.userRating>=2"></span>
+                                            <span class="fa fa-star " v-else></span>
+                                            <span class="fa fa-star checked " v-if="review.userRating>=3"></span>
+                                            <span class="fa fa-star " v-else></span>
+                                            <span class="fa fa-star checked -" v-if="review.userRating>=4"></span>
+                                            <span class="fa fa-star " v-else></span>
+                                            <span class="fa fa-star checked " v-if="review.userRating>=5"></span>
+                                            <span class="fa fa-star " v-else></span>
+                                            <span class="ms-2 rate">{{review.userRating}}/5</span>
+                                        </span>
+    
+                                    </div>
+                                </span>
+                            </div>
+                            <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
+                            <hr>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
 </div>
-
+<script >
+const { createApp } = Vue
+      createApp({
+        data() {
+            return {
+                        AllReviews: [],
+                        page: 1,
+                        made_review:1,
+                        edit_review:false,
+                        my_rating: "",
+                        user_review: "",
+                        my_review: [],
+                       
+                        
+                    }
+            },
+            methods: {
+                    get_reviews() {
+                        axios.get('/api/review/@Model.MediaId/getAll'+'?page=' + this.page).then(response => {
+                            $.each(response.data, (key, v) => {
+                                this.AllReviews.push(v);
+                            });
+                        })
+            
+                    },
+            
+                  
+                     fill_star(num) {
+                              
+                                for (let i = 1; i <= num; i++) {
+                                   let targetDiv= document.getElementById('star_' + i).style.color = 'goldenrod';
+                                  
+                                }
+                            },
+                            empty_star() {
+                    
+                                let current_rate = this.my_rating;
+                                for (let i = 5; i > current_rate; i--) {
+                                    document.getElementById('star_' + i).style.color = '#212529';
+                                }
+                            },
+                            set_rating(num) {
+                                this.my_rating = num;
+                            },
+                            add_review() {
+                        const headers = {
+                            "Content-Type": "application/x-www-form-urlencoded"
+                        }
+                                if (this.my_rating != '') {
+                                    document.getElementById('error_post').style.display = 'none';
+                                    axios.post('/api/review/@Model.MediaId/add', {
+                                        review: this.user_review,
+                                        rating: this.my_rating,
+                                    },
+                                    {headers:headers}
+                                    ).then(response => {
+                                    this.user_review = "";
+                                    this.get_my_review();
+                                });} else {
+                                    document.getElementById('error_post').style.display = 'block';
+                                }
+                            },
+                            get_my_review() {
+                                axios.get('/api/review/@Model.MediaId/get').then(response => {
+                                    if (response.data != "") {
+                                        this.my_review.push(response.data);
+                    
+                                    } else {
+                                        this.my_review = [];
+                                    }
+                                });
+                            },
+                            clear_rating() {
+                                this.my_rating = "";
+                                this.empty_star();
+                            },
+                            edit_reviewF() {
+                                this.user_review = this.my_review[0].review;
+                                this.my_rating = this.my_review[0].rating;
+                                this.my_review = [];
+                                this.edit_review = true;
+                    
+                            },
+                            update_review()
+                            {
+                                if (this.my_rating != '') {
+                                    document.getElementById('error_post').style.display = 'none';
+                                    axios.post('edit_review', {
+                                        review: this.user_review,
+                                        rating: this.my_rating,
+                                        user: this.user_id,
+                                    })
+                                    this.user_review = "";
+                                    this.$emit('update_review');
+                                } else {
+                                    document.getElementById('error_post').style.display = 'block';
+                                }
+                            },
+                            deleteReview()
+                             {
+                              axios.delete('/api/review/@Model.MediaId/delete').then(response => {
+                              this.get_my_review();
+                              this.clear_rating();
+                              });
+                              },
+                            cancel_edit()
+                            {
+                                this.$emit('update_review');
+                            }
+                },
+                mounted() {
+                    this.get_reviews();
+                    this.get_my_review();
+                        
+                }, 
+  }).mount('#app')
+</script>

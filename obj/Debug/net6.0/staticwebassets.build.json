@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZZDrikTykOGnwErttdpnLhjS4z7/eDW93dEdB9rQMY0=",
+  "Hash": "cHU+yNfFgjczOB/MFq6CObefCpRyJr3XIecdfMlVDac=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1088,12 +1088,12 @@
       "OriginalItemSpec": "wwwroot/Asset/Anime-banner.jpg"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Documentaries-banner.jpg",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Documentary-banner.jpg",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/Documentaries-banner.jpg",
+      "RelativePath": "Asset/Documentary-banner.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1102,7 +1102,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/Documentaries-banner.jpg"
+      "OriginalItemSpec": "wwwroot/Asset/Documentary-banner.jpg"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/example.jpg",
@@ -1207,12 +1207,12 @@
       "OriginalItemSpec": "wwwroot/Asset/main-banner.jpg"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MediaStorage/file_example_MP4_480_1_5MG.mp4",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MediaPostersImg/example.jpg",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/MediaStorage/file_example_MP4_480_1_5MG.mp4",
+      "RelativePath": "Asset/MediaPostersImg/example.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1221,15 +1221,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/MediaStorage/file_example_MP4_480_1_5MG.mp4"
+      "OriginalItemSpec": "wwwroot/Asset/MediaPostersImg/example.jpg"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Movies-banner.jpg",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Movie-banner.jpg",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/Movies-banner.jpg",
+      "RelativePath": "Asset/Movie-banner.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1238,7 +1238,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/Movies-banner.jpg"
+      "OriginalItemSpec": "wwwroot/Asset/Movie-banner.jpg"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png",
@@ -1258,12 +1258,12 @@
       "OriginalItemSpec": "wwwroot/Asset/MovieTimeLogo.png"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Tv Shows-banner.jpg",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Tv-banner.jpg",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/Tv Shows-banner.jpg",
+      "RelativePath": "Asset/Tv-banner.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1272,7 +1272,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/Tv Shows-banner.jpg"
+      "OriginalItemSpec": "wwwroot/Asset/Tv-banner.jpg"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/UserProfiles/00fb1787-52b0-4263-a4f4-08ee1df866c7.jpg",

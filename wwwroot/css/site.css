@@ -175,19 +175,25 @@ a:hover{
 }
 .review{
   background-color: rgba(31, 126, 138, 0.73);
-  border-radius: 1%;
+  border-radius: 5px;
 }
 .my_review{
   background-color: rgba(31, 126, 138, 0.73);
-  border-radius: 1%;
+  border-radius: 5px;
 }
-.fa-star {
-  font-size: 4vw;
+.usersRate>.fa-star {
+  font-size: 1vw!important;
 }
 
-.rate {
-  font-size: 2vw;
+.usersRate>.rate {
+  font-size: 1vw;
+}
+.Rate{
+  font-size: 1.5vw;
 }
 .vjs-theme-fantasy {
   --vjs-theme-fantasy--primary: #00AD94 !important;
+}
+.no-scroll {
+  overflow: hidden;
 }

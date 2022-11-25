@@ -45,12 +45,13 @@ const { createApp } = Vue
             getAllVideos()
             {
                  document.getElementById("wait").classList.remove("d-none");
+                 document.body.classList.add('no-scroll');
                  axios.get('/api/Media/getAll?page='+this.page).then(response=> {
-                     
-                      
-                      // if (response.data==""){
-                      //                                         this.last_page=true;
-                      //                                     }
+                     this.page++;
+                     if (@Model.MediaLastPage===this.page-1){
+                                           
+                                            this.last_page=true;
+                                       }
                                 $.each(response.data, (key, v) => {
                                     this.allVideos.push(v);
                                    
@@ -58,8 +59,9 @@ const { createApp } = Vue
                 
                                 });
                                  document.getElementById("wait").classList.add("d-none");
+                                 document.body.classList.remove('no-scroll');
                             })
-                                    this.page++;
+                                    
             },
           
             },

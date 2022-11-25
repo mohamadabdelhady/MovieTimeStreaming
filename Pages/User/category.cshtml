@@ -11,3 +11,59 @@
         <p>.</p>
     </div>
 </div>
+<div id="app">
+    <div id="" class="d-flex flex-wrap justify-content-start m-5">
+        <span class="card ms-2 mt-2" v-for="(item, index) in allVideos" style="width: 15rem">
+            <span class="card-body">
+                <img style="max-width: 100%" :src="item['mediaImg']" alt=""/>
+                <h5 class="">{{item['title']}}</h5>
+                <p class="mb-0">{{item['genre']}}</p>
+                <p class="mb-0">{{item['mediaType']}}</p>
+                <a :href="'ViewMedia?id='+item['id']" class=" btn my-btn" style="width: 90%">View {{item['mediaType']}} page</a>
+                <a :href="'videoPlayer?id='+item['id']" class="btn my-btn mt-2" style="width: 90%">Watch</a>
+            </span>
+        </span>
+    </div>
+    
+    <div align="center"><button class="btn my-btn m-auto" v-on:click="getAllVideos" :disabled="last_page">Load more</button></div>
+</div>
+<script>
+const { createApp } = Vue
+    
+      createApp({
+        data() {
+          return {
+            allVideos:[],
+            page:1,
+            last_page:false,
+          }
+        },
+        methods: {
+            getAllVideos()
+            {
+                 document.getElementById("wait").classList.remove("d-none");
+                 document.body.classList.add('no-scroll');
+                 axios.get('/api/Media/@Model.selectedCategory/getAll?page='+this.page).then(response=> {
+                     
+                      
+                      if (@Model.MediaLastPage===this.page-1){
+                       this.last_page=true;
+                       }
+                                $.each(response.data, (key, v) => {
+                                    this.allVideos.push(v);
+                                   
+                                    
+                
+                                });
+                                 document.getElementById("wait").classList.add("d-none");
+                                 document.body.classList.remove('no-scroll');
+                            })
+                                    this.page++;
+            },
+          
+            },
+            created(){
+            this.getAllVideos();
+            },
+      }).mount('#app')
+</script>

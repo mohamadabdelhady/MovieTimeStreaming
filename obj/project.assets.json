@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "DateOnlyTimeOnly.AspNet/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/DateOnlyTimeOnly.AspNet.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/DateOnlyTimeOnly.AspNet.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Google.Protobuf/3.19.4": {
         "type": "package",
         "compile": {
@@ -3944,6 +3956,20 @@
     }
   },
   "libraries": {
+    "DateOnlyTimeOnly.AspNet/2.0.0": {
+      "sha512": "N2jKdQlAw3NAzWOduEBXyvXsLGe3+xxcXpYB8gxnrxhB1BMNiYKiCKgfKRjrRc7xY3y7Qz4z+8wF7v/wA6zjyw==",
+      "type": "package",
+      "path": "dateonlytimeonly.aspnet/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dateonlytimeonly.aspnet.2.0.0.nupkg.sha512",
+        "dateonlytimeonly.aspnet.nuspec",
+        "lib/net6.0/DateOnlyTimeOnly.AspNet.dll",
+        "lib/net7.0/DateOnlyTimeOnly.AspNet.dll"
+      ]
+    },
     "Google.Protobuf/3.19.4": {
       "sha512": "fd07/ykL4O4FhqrZIELm5lmiyOHfdPg9+o+hWr6tcfRdS7tHXnImg/2wtogLzlW2eEmr0J7j6ZrZvaWOLiJbxQ==",
       "type": "package",
@@ -10814,6 +10840,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DateOnlyTimeOnly.AspNet >= 2.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.10",
@@ -10863,6 +10890,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DateOnlyTimeOnly.AspNet": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.AspNetCore.Identity": {
             "target": "Package",
             "version": "[2.2.0, )"

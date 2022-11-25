@@ -20,6 +20,7 @@ namespace MovieTimeStreaming.Pages.User
         public int MediaWatchCount { get; set; }
         public int MediaLikes { get; set; }
         public int MediaDisLikes { get; set; }
+        public DateOnly MediaReleaseDate { get; set; }
         public videoPlayerModel(ApplicationDbContext context)
         {
             _context = context;
@@ -37,6 +38,8 @@ namespace MovieTimeStreaming.Pages.User
             MediaWatchCount = MediaItem.WatchCount;
             MediaLikes = MediaItem.Likes;
             MediaLikes = MediaItem.DisLikes;
+             MediaReleaseDate = MediaItem.ReleaseDate;
+            
         }
     }
 }

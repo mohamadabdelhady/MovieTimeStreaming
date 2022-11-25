@@ -26,12 +26,11 @@
 </div>
 <div class="row container mt-5">
     <div class="col-12">
-
-        <div id="app" :key="update">
+        <div id="app">
             <div>
                 <div>
                     <div v-if="!my_review.length" class="review p-2">
-                        <p class="">What did you think of this @Model.MediaType</p>
+                        <p class="usersRate">What did you think of this @Model.MediaType</p>
                         <span class="mt-2 stars" style="padding-left: 60px;">
                             <a href="#" class='' id="star_1" @@mouseover="fill_star(1)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(1)">
                                 <i class="fa fa-star fa-3x"></i>
@@ -48,7 +47,7 @@
                             <a href="#" class='' id="star_5" @@mouseover="fill_star(5)" @@mouseleave="empty_star()" v-on:click.prevent="set_rating(5)">
                                 <i class="fa fa-star fa-3x"></i>
                             </a>
-                            <span class="ms-2 rate">{{my_rating}}/5</span>
+                            <span class="ms-2 Rate">{{my_rating}}/5</span>
                             <span v-if="my_rating!=''" class="ms-2 rate">
                                 <a href="#" v-on:click.prevent="clear_rating">Clear rating</a>
                             </span>
@@ -85,7 +84,7 @@
                             </div>
                         </span>
                         <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
-                        <div><a href="" class="me-3" style="color: #753939">Delete</a><a href="">Edit</a></div>
+                        <div><a href="#" v-on:click.prevent="deleteReview" class="me-3" style="color: #753939">Delete</a><a href="">Edit</a></div>
                     </div>
                     
                 </div>
@@ -224,10 +223,11 @@ const { createApp } = Vue
                                     document.getElementById('error_post').style.display = 'block';
                                 }
                             },
-                            delete_review()
+                            deleteReview()
                             {
-                                axios.get('/delete_review/'+this.id+'/'+this.type).then(response => {
-                                    this.$emit('update_review');
+                                axios.delete('/api/review/@Model.MediaId/delete').then(response => {
+                                    this.get_my_review();
+                                    this.clear_rating();
                                 });
                             },
                             cancel_edit()
