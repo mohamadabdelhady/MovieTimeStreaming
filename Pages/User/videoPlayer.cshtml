@@ -104,32 +104,32 @@
     
                     <div class="mt-5">
                         <p v-if="!AllReviews.length" class="" style="margin-left:50px;">There is no reviews on this @Model.MediaType, be the first one to review it.</p>
-                        <div class="comments" v-for="(review,index) in AllReviews">
-                            <div>
-                                <img src="" class="userAvatar">
-                                <span class="pl-1">{{review.name}}</span>
-                                <span style="float: right;">
-                                    <div>
-                                        <span class="">
-                                            <span class="fa fa-star checked" v-if="review.userRating>=1"></span>
-                                            <span class="fa fa-star " v-else></span>
-                                            <span class="fa fa-star checked " v-if="review.userRating>=2"></span>
-                                            <span class="fa fa-star " v-else></span>
-                                            <span class="fa fa-star checked " v-if="review.userRating>=3"></span>
-                                            <span class="fa fa-star " v-else></span>
-                                            <span class="fa fa-star checked -" v-if="review.userRating>=4"></span>
-                                            <span class="fa fa-star " v-else></span>
-                                            <span class="fa fa-star checked " v-if="review.userRating>=5"></span>
-                                            <span class="fa fa-star " v-else></span>
-                                            <span class="ms-2 rate">{{review.userRating}}/5</span>
-                                        </span>
-    
-                                    </div>
-                                </span>
-                            </div>
-                            <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
-                            <hr>
-                        </div>
+                       <div class="comments" v-for="(review,index) in AllReviews">
+                                              <div>
+                                                  <img :src="review.profileImage" id="userAvatar" class="me-2">
+                                                  <span class="pl-1">{{review.userName}}</span>
+                                                  <span style="float: right;">
+                                                      <div>
+                                                          <span class="">
+                                                              <span class="fa fa-star checked" v-if="review.userRating>=1"></span>
+                                                              <span class="fa fa-star " v-else></span>
+                                                              <span class="fa fa-star checked " v-if="review.userRating>=2"></span>
+                                                              <span class="fa fa-star " v-else></span>
+                                                              <span class="fa fa-star checked " v-if="review.userRating>=3"></span>
+                                                              <span class="fa fa-star " v-else></span>
+                                                              <span class="fa fa-star checked -" v-if="review.userRating>=4"></span>
+                                                              <span class="fa fa-star " v-else></span>
+                                                              <span class="fa fa-star checked " v-if="review.userRating>=5"></span>
+                                                              <span class="fa fa-star " v-else></span>
+                                                              <span class="ms-2 rate">{{review.userRating}}/5</span>
+                                                          </span>
+                      
+                                                      </div>
+                                                  </span>
+                                              </div>
+                                              <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
+                                              <hr>
+                                          </div>
                     </div>
     
                 </div>

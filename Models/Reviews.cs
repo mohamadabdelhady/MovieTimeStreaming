@@ -8,7 +8,7 @@ namespace MovieTimeStreaming.Models
         public string MediaId { get; set; }
         public string UserReview { get; set; }
         public string UserRating { get; set; }
-        
+        public ApplicationUser User { get; set; }
         public DateTime CreatedAt { get; set; }
     }
 }

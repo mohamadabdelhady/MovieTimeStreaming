@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sKLd+7ym30m+m7qcnK8y8h7OGkqy+JeQHNctiWnhCrU=",
+  "Hash": "gyJ3zRwB2lbtOoFCUeikyIcQi/55rZvNTqbVbognNM4=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1241,6 +1241,23 @@
       "OriginalItemSpec": "wwwroot/Asset/MediaStorage/Eternal.Sunshine.of.the.Spotless.Mind.2004.720p.BrRip.x264.BOKUTOX.YIFY.mp4"
     },
     {
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MediaStorage/Perfect Blue 1997 REMASTERED JAPANESE 1080p BluRay H264 AAC-VXT.mkv",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/MediaStorage/Perfect Blue 1997 REMASTERED JAPANESE 1080p BluRay H264 AAC-VXT.mkv",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/MediaStorage/Perfect Blue 1997 REMASTERED JAPANESE 1080p BluRay H264 AAC-VXT.mkv"
+    },
+    {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Movie-banner.jpg",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
@@ -1443,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Asset/UserProfiles/446288cc-bd1f-4bbc-82b7-a2f918c6cc10.jpg"
+    },
+    {
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/UserProfiles/5dba4aaa-4d34-408d-9349-d1e197cbb55c.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/UserProfiles/5dba4aaa-4d34-408d-9349-d1e197cbb55c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/UserProfiles/5dba4aaa-4d34-408d-9349-d1e197cbb55c.jpg"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/UserProfiles/7c84e411-5634-4067-981c-f52b4647285c.jpg",

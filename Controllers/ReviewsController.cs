@@ -32,15 +32,21 @@ namespace MovieTimeStreaming.Controllers
 
         [Route("getAll")]
         [HttpGet]
-        public async Task<List<Reviews>> GetAllReviews(string id,[FromQuery(Name = "page")] int page)
+        public async Task<IQueryable> GetAllReviews(string id,[FromQuery(Name = "page")] int page)
         {
             var PageNum = page;
             var user = _userManager.GetUserAsync(User);
-            
-            
-            return _context.Reviews.Where(x => x.MediaId == id && x.UserId != user.Result.Id).OrderBy(x=>x.CreatedAt).Skip((PageNum-1)*10).Take(10).ToList();
 
 
+            var results = _context.Reviews.Include(x=>x.User)
+                .Select(x => new
+                {
+                    x.User.UserName, x.CreatedAt, x.User.ProfileImage, x.UserReview, x.MediaId,
+                    User_Id = x.UserId, x.UserRating
+                })
+                .Where(x => x.MediaId == id && x.User_Id != user.Result.Id)
+                .Skip((PageNum - 1) * 10);
+             return results;
         }
 
         [Route("get")]

@@ -290,7 +290,7 @@ namespace MovieTimeStreaming.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("UserRating")
                         .IsRequired()
@@ -301,6 +301,8 @@ namespace MovieTimeStreaming.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Reviews");
                 });
@@ -382,6 +384,17 @@ namespace MovieTimeStreaming.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MovieTimeStreaming.Models.Reviews", b =>
+                {
+                    b.HasOne("MovieTimeStreaming.Data.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

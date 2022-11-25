@@ -11,8 +11,8 @@ using MovieTimeStreaming.Data;
 namespace MovieTimeStreaming.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221123103208_reviewModel")]
-    partial class reviewModel
+    [Migration("20221125222217_intial")]
+    partial class intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -230,22 +230,35 @@ namespace MovieTimeStreaming.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<int>("DisLikes")
+                        .HasColumnType("int");
+
                     b.Property<string>("Genre")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<int>("Likes")
+                        .HasColumnType("int");
+
+                    b.Property<double>("MediaDuration")
+                        .HasColumnType("double");
+
+                    b.Property<string>("MediaSrc")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<float>("Rating")
                         .HasColumnType("float");
 
-                    b.Property<DateTime>("ReleaseDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<DateOnly>("ReleaseDate")
+                        .HasColumnType("date");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("WatchCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("about")
                         .IsRequired()
@@ -270,11 +283,16 @@ namespace MovieTimeStreaming.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("MediaId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("UserRating")
                         .IsRequired()
@@ -286,7 +304,37 @@ namespace MovieTimeStreaming.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Reviews");
+                });
+
+            modelBuilder.Entity("MovieTimeStreaming.Models.WatchHistory", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LastWatchDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("MediaId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("StopTime")
+                        .HasColumnType("double");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Watched")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("WatchHistory");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -338,6 +386,17 @@ namespace MovieTimeStreaming.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MovieTimeStreaming.Models.Reviews", b =>
+                {
+                    b.HasOne("MovieTimeStreaming.Data.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
