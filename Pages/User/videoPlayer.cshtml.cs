@@ -21,10 +21,10 @@ namespace MovieTimeStreaming.Pages.User
         public float rating { get; set; }
         public string MediaSrc { get; set; }
         public int MediaWatchCount { get; set; }
-        public int MediaLikes { get; set; }
-        public int MediaDisLikes { get; set; }
+        
         public DateOnly MediaReleaseDate { get; set; }
         public double MediaResumeTime { get; set; }
+       
         public videoPlayerModel(ApplicationDbContext context,UserManager<ApplicationUser> userManager)
         {
             _context = context;
@@ -42,8 +42,7 @@ namespace MovieTimeStreaming.Pages.User
             rating = MediaItem.Rating;
             MediaSrc = MediaItem.MediaSrc;
             MediaWatchCount = MediaItem.WatchCount;
-            MediaLikes = MediaItem.Likes;
-            MediaDisLikes = MediaItem.DisLikes;
+            
              MediaReleaseDate = MediaItem.ReleaseDate;
              var History = _context.WatchHistory.FirstOrDefault(x => x.MediaId == MediaId);
              MediaResumeTime = History.StopTime;

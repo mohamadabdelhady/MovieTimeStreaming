@@ -68,6 +68,7 @@ namespace MovieTimeStreaming.Controllers
             };
             _context.Entry(review).State = EntityState.Added;
             _context.SaveChanges();
+            GetAverageRating(id);
         }
         [Route("delete")]
         [HttpDelete]
@@ -77,6 +78,23 @@ namespace MovieTimeStreaming.Controllers
             var review=_context.Reviews.First(x => x.UserId == user.Result.Id&&x.MediaId==id);
             _context.Reviews.Remove(review);
             _context.SaveChanges();
+            GetAverageRating(id);
+        }
+
+        public void GetAverageRating(string mediaId)
+        {
+            var ReviewsCount = _context.Reviews.Count();
+            var UsersReviews = _context.Reviews.Where(x => x.MediaId == mediaId);
+            var RatingSum=0;
+            foreach (var review in UsersReviews)
+            {
+                var temp = int.Parse(review.UserRating);
+                RatingSum += temp;
+            }
+            var media = _context.Media.Find(int.Parse(mediaId));
+            float avg=RatingSum / ReviewsCount;
+            media.Rating = avg;
+             _context.SaveChanges();
         }
     }
 }
