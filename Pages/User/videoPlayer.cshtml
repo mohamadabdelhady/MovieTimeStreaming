@@ -18,7 +18,7 @@
                 width="854"
                 height="480"
                 poster="@Model.MediaImg"
-                data-setup="{}">
+                data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
                 <source src="@Model.MediaSrc" type="video/mp4"/>
                 @* <source src="MY_VIDEO.webm" type="video/webm" /> *@
                 <p class="vjs-no-js">
@@ -27,14 +27,16 @@
                     <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a
                     >
                 </p>
+                @* <track kind="captions" src="//example.com/path/to/captions.vtt" srclang="en" label="English" default> *@
+                
             </video>
         </div>
         <div>
             <h4 class="mt-2">@Model.MediaTitle</h4>
             <p>@Model.MediaReleaseDate</p>
             <p>@Model.MediaWatchCount View</p>
-            <span class="me-4"><i class="fa fa-thumbs-up me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaLikes</span>
-            <span><i class="fa fa-thumbs-down me-1" style="font-size:24px; color: #1F7E8A; cursor: pointer;"></i>@Model.MediaDisLikes</span>
+            <span class="me-4" style="font-size:24px; color: #1F7E8A; cursor: pointer;" onclick="likeMedia()"><i class="fa fa-thumbs-up me-1" ></i><span id="likes">@Model.MediaLikes</span></span>
+            <span style="font-size:24px; color: #1F7E8A; cursor: pointer;" onclick="disLikeMedia()"><i class="fa fa-thumbs-down me-1" ></i><span id="dislikes">@Model.MediaDisLikes</span></span>
         </div>
     </div>
     <div class="mt-5" id="app">
@@ -146,6 +148,7 @@ let player=videojs('MyPlayer',
 player.on('loadeddata', () => { 
     duration=player.duration();
     tenPercentOfVideo=((duration*10)/100);
+    player.currentTime(@Model.MediaResumeTime);
   });
 player.on('playing', () => { 
     interval=setInterval(getWatchedTime,(tenPercentOfVideo)*1000);
@@ -162,11 +165,25 @@ function getWatchedTime()
     "Content-Type": "application/x-www-form-urlencoded"
     }
     axios.post('/api/Media/@Model.MediaId/watchedTime', {
-                                            watchedTime: currentTime,
-                                            currentUser:"@UserManager.GetUserAsync(User).Result.Id"
-                                        },
-                                        {headers:headers}
-                                        ).then(response => {});
+    watchedTime: currentTime,
+    },
+    {headers:headers}
+    ).then(response => {});
+}
+function likeMedia()
+{
+axios.get('/api/RateSys/@Model.MediaId/like').then(response => {updateRate()});
+}
+function disLikeMedia()
+{
+axios.get('/api/RateSys/@Model.MediaId/disLike').then(response => {updateRate()});
+}
+function updateRate()
+{
+    axios.get('/api/RateSys/@Model.MediaId/update').then(response => {
+        document.getElementById('likes').innerHTML=response.data[0].likes;
+        document.getElementById('dislikes').innerHTML=response.data[0].disLikes;
+    });
 }
 const { createApp } = Vue
       createApp({
@@ -276,7 +293,8 @@ const { createApp } = Vue
                             cancel_edit()
                             {
                                 this.$emit('update_review');
-                            }
+                            },
+                            
                 },
                 mounted() {
                     this.get_reviews();

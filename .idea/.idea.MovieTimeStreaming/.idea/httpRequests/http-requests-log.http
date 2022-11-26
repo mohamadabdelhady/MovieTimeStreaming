@@ -1,3 +1,9 @@
+GET https://localhost:7024/api/RateSys/1/like
+
+<> 2022-11-26T101822.500.txt
+
+###
+
 GET https://localhost:7024/api/review/35/getAll?page=1
 
 <> 2022-11-25T213023.500.txt

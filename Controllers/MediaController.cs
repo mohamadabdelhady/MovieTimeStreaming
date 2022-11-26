@@ -47,7 +47,7 @@ namespace MovieTimeStreaming.Controllers
         public void SetWatchedTime(string id)
         {
             var user = _userManager.GetUserAsync(User);
-            var userId = HttpContext.Request.Form["currentUser"].ToString();
+            var userId = user.Result.Id;
             var WatchHistory = _context.WatchHistory.FirstOrDefault(x => x.MediaId == id&&x.UserId==userId);
             var MediaId = int.Parse(id);
             var media = _context.Media.FirstOrDefault(x => x.ID == MediaId);

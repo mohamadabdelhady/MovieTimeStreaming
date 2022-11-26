@@ -18,16 +18,12 @@ namespace MovieTimeStreaming.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly IEnumerable<ApplicationUser> _users;
-        private readonly IEnumerable<Reviews> _reviews;
-       
 
-        public ReviewsController(ApplicationDbContext context, UserManager<ApplicationUser> userManager,IEnumerable<ApplicationUser> users,IEnumerable<Reviews> reviews)
+        public ReviewsController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
-            _users = users;
-            _reviews = reviews;
+           
         }
 
         [Route("getAll")]
