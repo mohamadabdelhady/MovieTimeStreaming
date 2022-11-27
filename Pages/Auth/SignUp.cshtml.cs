@@ -20,14 +20,16 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
+        private readonly IConfiguration _configuration;
 
-        public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger)
+        public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger,IConfiguration configuration)
         {
             _userManager = userManager;
             _logger = logger;
             _signInManager = signInManager;
             _userStore = userStore;
             _emailStore = GetEmailStore();
+            _configuration = configuration;
         }
         [BindProperty]
         public InputModel Input { get; set; }
@@ -90,7 +92,7 @@ namespace MovieTimeStreaming.Pages.Auth
                                      $" <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
                                      var client = new SmtpClient("smtp.mailtrap.io",587)
                                      {
-                                         Credentials = new NetworkCredential("15f40ac89aab5a","a84122b19d4d79"),
+                                         Credentials = new NetworkCredential(_configuration["smtp:userName"],_configuration["smtp:password"]),
                                          EnableSsl = true
                                      };
                                      

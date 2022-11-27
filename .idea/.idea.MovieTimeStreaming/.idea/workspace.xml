@@ -5,7 +5,18 @@
     <projectFile profileName="MovieTimeStreaming">MovieTimeStreaming.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="" />
+    <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +152,7 @@
       <workItem from="1669321216964" duration="16059000" />
       <workItem from="1669367827284" duration="36036000" />
       <workItem from="1669453496753" duration="11892000" />
-      <workItem from="1669574094687" duration="7710000" />
+      <workItem from="1669574094687" duration="9734000" />
     </task>
     <servers />
   </component>

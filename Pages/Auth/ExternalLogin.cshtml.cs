@@ -31,13 +31,16 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly IEmailSender _emailSender;
         private readonly ILogger<ExternalLoginModel> _logger;
+        private readonly IConfiguration _configuration;
 
         public ExternalLoginModel(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
             IUserStore<ApplicationUser> userStore,
             ILogger<ExternalLoginModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IConfiguration configuration
+            )
         {
             _signInManager = signInManager;
             _userManager = userManager;
@@ -45,6 +48,7 @@ namespace MovieTimeStreaming.Pages.Auth
             _emailStore = GetEmailStore();
             _logger = logger;
             _emailSender = emailSender;
+            _configuration = configuration;
         }
 
        
@@ -117,7 +121,7 @@ namespace MovieTimeStreaming.Pages.Auth
                 {
                     Input = new InputModel
                     {
-                        UserName=info.Principal.FindFirstValue(ClaimTypes.Name),
+                        UserName=info.Principal.FindFirstValue(ClaimTypes.NameIdentifier),
                         Email = info.Principal.FindFirstValue(ClaimTypes.Email)
                     };
                 }
@@ -163,7 +167,8 @@ namespace MovieTimeStreaming.Pages.Auth
                                          $" <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>";
                         var client = new SmtpClient("smtp.mailtrap.io",587)
                         {
-                            Credentials = new NetworkCredential("15f40ac89aab5a","a84122b19d4d79"),
+                            
+                            Credentials = new NetworkCredential(_configuration["smtp:userName"],_configuration["smtp:password"]),
                             EnableSsl = true
                         };
                                      
