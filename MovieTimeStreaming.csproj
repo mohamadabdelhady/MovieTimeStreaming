@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
+      <UserSecretsId>63a42d40-a3b5-4331-8c6f-54abbafb8afd</UserSecretsId>
+  </PropertyGroup>
 
     <ItemGroup>
       <Folder Include="Controllers" />
@@ -13,6 +14,8 @@
 
     <ItemGroup>
       <PackageReference Include="DateOnlyTimeOnly.AspNet" Version="2.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.10" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.10" />
       <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
@@ -32,6 +35,10 @@
     </ItemGroup>
 
     <ItemGroup>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\ExternalLoginCallback\ExternalLogin.cshtml" />
     </ItemGroup>
 
 </Project>

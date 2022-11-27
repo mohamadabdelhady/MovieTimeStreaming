@@ -30,6 +30,7 @@ namespace MovieTimeStreaming.Pages.Auth
         [TempData]
         public string ErrorMessage { get; set; }
         
+        
         public class InputModel
         {
             [Required]
@@ -65,6 +66,7 @@ namespace MovieTimeStreaming.Pages.Auth
         {
             returnUrl ??= Url.Content("~/");
 
+            // ReSharper disable once UseConfigureAwaitFalse
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             if (ModelState.IsValid)

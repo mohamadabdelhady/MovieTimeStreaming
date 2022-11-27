@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cOgwZvJ4PNgS6a96/czFvLMUQoHrJlzb0tmk3J39Uk4=",
+  "Hash": "UJEfRE7eIB2wo8bULFi8pj9CBdFj7h16AWVlkz0Hw+o=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1122,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot/Asset/example.jpg"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/f_logo_RGB-Blue_100.png",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Facebook.png",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/f_logo_RGB-Blue_100.png",
+      "RelativePath": "Asset/Facebook.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,7 +1136,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/f_logo_RGB-Blue_100.png"
+      "OriginalItemSpec": "wwwroot/Asset/Facebook.png"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/film-reel-loader.gif",
@@ -1156,12 +1156,12 @@
       "OriginalItemSpec": "wwwroot/Asset/film-reel-loader.gif"
     },
     {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/gmail-icon.png",
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Google.png",
       "SourceId": "MovieTimeStreaming",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
       "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/gmail-icon.png",
+      "RelativePath": "Asset/Google.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,7 +1170,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/gmail-icon.png"
+      "OriginalItemSpec": "wwwroot/Asset/Google.png"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Home.jpg",

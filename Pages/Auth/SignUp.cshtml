@@ -32,8 +32,17 @@
     <hr style="background-color: rgba(42, 98, 116, 0.55)">
     <div align="center">
         <p style="font-size: large">Or sign up with</p>
-        <a href="/auth/redirect"><img class="signup-icon" src="/Asset/gmail-icon.png"></a>
-        <a href="/auth/redirect"><img class="signup-icon" src="/Asset/f_logo_RGB-Blue_100.png"></a>
+        <form id="external-account" asp-page="ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div>
+                                    <p>
+                                        @foreach (var provider in Model.ExternalLogins)
+                                        {
+                                            <a href="/auth/redirect" ><img class="signup-icon" src="/Asset/@(provider.Name).png" onclick="event.preventDefault(); document.getElementById('@provider.Name').click()"></a>
+                                            <button type="submit" id="@provider.Name"  class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account" hidden>@provider.DisplayName</button>
+                                        }
+                                    </p>
+                                </div>
+                            </form>
     </div>
 </div>
 @section Scripts {

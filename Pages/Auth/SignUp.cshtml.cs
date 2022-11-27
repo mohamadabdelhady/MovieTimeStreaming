@@ -32,7 +32,7 @@ namespace MovieTimeStreaming.Pages.Auth
         [BindProperty]
         public InputModel Input { get; set; }
          public string ReturnUrl { get; set; }
-        // public IList<AuthenticationScheme> ExternalLogins { get; set; }
+         public IList<AuthenticationScheme> ExternalLogins { get; set; }
         
         public class InputModel
         {
@@ -61,11 +61,13 @@ namespace MovieTimeStreaming.Pages.Auth
         public async Task OnGetAsync(string? returnUrl = null)
         {
             ReturnUrl = returnUrl;
+             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
         public async Task<IActionResult> OnPostAsync(string? returnUrl = null)
         {
             Debug.WriteLine("one");
              returnUrl ??= Url.Content("~/");
+             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
                 Debug.WriteLine("two");

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "721yYHyQPBXfIdaPvYmNPk/BUdIaOs33cX7npiiEoN6PqoA5xU3tc4hxsOL7Mq/DUTMUEluf1LXYWmksQBklOw==",
+  "dgSpecHash": "xOwoIDXDRW+yLnhZvMSLgFALg9Ec8BbVkDzqrsL9SDfH0kvUqrprk3M5pfeqlSw5QzDD8K/aaWum3DSeq92vag==",
   "success": true,
   "projectFilePath": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/MovieTimeStreaming.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,8 @@
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "/home/mohamad/.nuget/packages/microsoft.aspnetcore.authentication.facebook/6.0.10/microsoft.aspnetcore.authentication.facebook.6.0.10.nupkg.sha512",
+    "/home/mohamad/.nuget/packages/microsoft.aspnetcore.authentication.google/6.0.10/microsoft.aspnetcore.authentication.google.6.0.10.nupkg.sha512",
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.10/microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.10/microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",
     "/home/mohamad/.nuget/packages/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming
 build_property._RazorSourceGeneratorDebug = 
 
+[/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ExternalLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9FeHRlcm5hbExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/Pages/Auth/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9Gb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
