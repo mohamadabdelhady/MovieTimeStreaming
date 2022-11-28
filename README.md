@@ -11,6 +11,7 @@ Front-end
 <ul>
 <li>HTML/CSS/<a href="https://getbootstrap.com/">Bootstrap</a></li>
 <li>JavaScript( <a href="https://vuejs.org/">Vue.js</a> )</li>
+<li><a href="https://videojs.com/getting-started/">Video.js</a>( open source HTML5 video player.)
 </ul>
 </li>
 <li>

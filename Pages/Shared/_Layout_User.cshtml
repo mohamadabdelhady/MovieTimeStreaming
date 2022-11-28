@@ -38,7 +38,7 @@
                         <br>
                         <p class="ms-3 user-name">@CurrentUser.Result.UserName</p><hr>
                         @* <a class="dropdown-item" asp-page="profile">My profile</a> *@
-                        <a class="dropdown-item" asp-page="bookmarkList">Bookmark list</a>
+                        <a class="dropdown-item" asp-page="UserBookmarks">Bookmark list</a>
                         <a class="dropdown-item" asp-page="settings">Settings</a>
                         <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="ml-1">Sign out</span></a>
                         <form id="logout-form" class="form-inline" asp-page="/Auth/LogOut" method="post">

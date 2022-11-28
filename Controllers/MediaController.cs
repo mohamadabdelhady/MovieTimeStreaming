@@ -69,15 +69,27 @@ namespace MovieTimeStreaming.Controllers
             _context.SaveChanges();
         }
 
-        [Route("search")]
-        [HttpPost]
-        public RedirectToPageResult search()
+        [Route("{id}/bookmark")]
+        [HttpGet]
+        public void MarkBookmark(string id)
         {
-            var key = HttpContext.Request.Form["key"];
-            var keyNormalize = (key.ToString()).ToUpper();
-            var results = _context.Media.Where(x => x.Title.ToUpper().Contains(keyNormalize)).ToList();
-            return RedirectToPage("searchResults",new {results});
+            var user = _userManager.GetUserAsync(User);
+            var bookmark = new MediaBookmarks()
+            {
+                UserId = user.Result.Id,
+                MediaId=id,
+            };
+            _context.Entry(bookmark).State = EntityState.Added;
+            _context.SaveChanges();
         }
-        
+        [Route("{id}/removeBookmark")]
+        [HttpGet]
+        public void RemoveBookmark(string id)
+        {
+            var user = _userManager.GetUserAsync(User);
+            var bookmark=_context.MediaBookmarks.First(x => x.UserId == user.Result.Id&&x.MediaId==id);
+            _context.MediaBookmarks.Remove(bookmark);
+            _context.SaveChanges();
+        }
     }
 }

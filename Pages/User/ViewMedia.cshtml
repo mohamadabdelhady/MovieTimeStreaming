@@ -10,7 +10,14 @@
 <div class="row mt-4 container">
     <div class="col-4">
         <img alt="Media poster image" class="MediaPosterImg mb-2" src="@Model.MediaImg"/>
-        <a href="" class="btn my-btn" style="width: 100%">Bookmark</a>
+        @if (Model.IsBookmarked==1)
+        {
+            <a href="#" onclick="event.preventDefault(); addOrRemoveBookmark()" id="bookmark" class="btn my-btn" style="width: 100%">Remove Bookmark</a>
+        }
+        else
+        {
+            <a href="#" onclick="event.preventDefault(); addOrRemoveBookmark()" id="bookmark" class="btn my-btn" style="width: 100%">Bookmark</a>
+        }
         <a asp-page="videoPlayer" style="width: 100%" asp-route-id="@Model.MediaId" class="btn my-btn mt-2">Watch</a>
     </div>
     <div class="col-6">
@@ -125,7 +132,26 @@
         </div>
     </div>
 </div>
-<script type="module">
+<script>
+let is=@Model.IsBookmarked;
+ function addOrRemoveBookmark()
+ {
+     if (!is)
+         {
+ axios.get('/api/media/@Model.MediaId/bookmark').then(response => {
+ document.getElementById("bookmark").innerText="Remove bookmark";
+is = false;
+ });
+ }
+   else 
+       {
+  axios.get('/api/media/@Model.MediaId/removeBookmark').then(response => {
+  document.getElementById("bookmark").innerText="Bookmark";
+  is = true;
+  });
+  }
+   }
+ 
 const { createApp } = Vue
       createApp({
         data() {
@@ -231,7 +257,8 @@ const { createApp } = Vue
                             cancel_edit()
                             {
                                 this.$emit('update_review');
-                            }
+                            },
+                           
                 },
                 mounted() {
                     this.get_reviews();

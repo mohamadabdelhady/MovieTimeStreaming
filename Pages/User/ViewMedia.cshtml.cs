@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -6,6 +7,7 @@ namespace MovieTimeStreaming.Pages.User
     public class ViewMediaModel : PageModel
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
         [FromQuery(Name = "id")]
         public int MediaId { get; set; }
 
@@ -15,11 +17,13 @@ namespace MovieTimeStreaming.Pages.User
         public string MediaAbout { get; set; }
         public string MediaImg { get; set; }
         public float rating { get; set; }
-        
+        public int IsBookmarked { get; set; }
 
-        public ViewMediaModel(ApplicationDbContext context)
+
+        public ViewMediaModel(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public void OnGet()
@@ -31,6 +35,9 @@ namespace MovieTimeStreaming.Pages.User
             MediaType = MediaItem.mediaType;
             MediaImg = MediaItem.mediaImg;
             rating = MediaItem.Rating;
+            var user = _userManager.GetUserAsync(User);
+            var bookmark=_context.MediaBookmarks.FirstOrDefault(x => x.UserId == user.Result.Id&&x.MediaId==MediaId.ToString());
+            IsBookmarked = bookmark!=null ? 1 : 0;
         }
     }
 }

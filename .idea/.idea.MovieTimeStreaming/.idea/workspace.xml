@@ -8,14 +8,17 @@
     <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MediaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MediaController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/searchResults.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/searchResults.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
@@ -165,7 +168,7 @@
       <workItem from="1669628086954" duration="251000" />
       <workItem from="1669629206487" duration="419000" />
       <workItem from="1669629638313" duration="34000" />
-      <workItem from="1669629683296" duration="1808000" />
+      <workItem from="1669629683296" duration="7888000" />
     </task>
     <servers />
   </component>
@@ -188,6 +191,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pages/User/UserBookmarks.cshtml.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Pages/User/UserBookmarks.cshtml.cs" initialLine="28" containingFunctionPresentation="method 'OnGet'">
+            <startOffsets>
+              <option value="930" />
+            </startOffsets>
+            <endOffsets>
+              <option value="931" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#System.Security.Claims.ClaimsPrincipal" memberName="Identities" />
