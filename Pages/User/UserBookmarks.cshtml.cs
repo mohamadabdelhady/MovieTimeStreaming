@@ -21,11 +21,8 @@ namespace MovieTimeStreaming.Pages.User
         public void OnGet()
         {
             var user = _userManager.GetUserAsync(User);
-            BookmarkItems =  _context.Media
-                .Where(x =>
-                    _context.MediaBookmarks.Any(b => b.UserId == user.Result.Id)
-                )
-                .ToList();
+            var ids = _context.MediaBookmarks.Where(x => x.UserId == user.Result.Id).Select(x=>int.Parse(x.MediaId)).ToArray();
+            BookmarkItems = _context.Media.Where(x => ids.Contains(x.ID)).ToList();
         }
     }
 }
