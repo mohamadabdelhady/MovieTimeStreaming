@@ -121,7 +121,7 @@ namespace MovieTimeStreaming.Pages.Auth
                 {
                     Input = new InputModel
                     {
-                        UserName=info.Principal.FindFirstValue(ClaimTypes.NameIdentifier),
+                        UserName=info.Principal.FindFirstValue(ClaimTypes.GivenName),
                         Email = info.Principal.FindFirstValue(ClaimTypes.Email)
                     };
                 }
@@ -175,7 +175,7 @@ namespace MovieTimeStreaming.Pages.Auth
                         MailMessage mailMessage=new MailMessage("MovieTime@example.com", Input.Email,"Email Verification",message);
                                      
                         AlternateView htmlView = AlternateView.CreateAlternateViewFromString(
-                            $"<div style=margin:10px;padding:10px'><img src='https://raw.githubusercontent.com/mohamadabdelhady/MovieTimeStreaming/main/MovieTimeStreaming/wwwroot/Asset/MovieTimeLogo.png'><br><p class='m-2 p-2'>{message}</p></div>",
+                            $"<div style=margin:10px;padding:10px'><img src='https://i.ibb.co/Y3r5qD4/Movie-Time-Logo.png'><br><p class='m-2 p-2'>{message}</p></div>",
                             null,
                             "text/html"
                         );

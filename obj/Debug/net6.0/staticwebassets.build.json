@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UJEfRE7eIB2wo8bULFi8pj9CBdFj7h16AWVlkz0Hw+o=",
+  "Hash": "fDollEgOV4xQbBiXnj2HC39/z8sRH4UWUdRuAspG/gY=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1392,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Asset/UserProfiles/3502ee5f-95dd-425c-b015-3b04ff5a7bb2.jpg"
+    },
+    {
+      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/UserProfiles/37cb228d-2f5f-4f74-90d1-27f5933f4732.jpg",
+      "SourceId": "MovieTimeStreaming",
+      "SourceType": "Discovered",
+      "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
+      "BasePath": "_content/MovieTimeStreaming",
+      "RelativePath": "Asset/UserProfiles/37cb228d-2f5f-4f74-90d1-27f5933f4732.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Asset/UserProfiles/37cb228d-2f5f-4f74-90d1-27f5933f4732.jpg"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/UserProfiles/3ab8e458-7bb5-4dec-9219-a0ac87a533bd.jpg",

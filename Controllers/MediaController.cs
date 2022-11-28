@@ -68,6 +68,16 @@ namespace MovieTimeStreaming.Controllers
             }
             _context.SaveChanges();
         }
+
+        [Route("search")]
+        [HttpPost]
+        public RedirectToPageResult search()
+        {
+            var key = HttpContext.Request.Form["key"];
+            var keyNormalize = (key.ToString()).ToUpper();
+            var results = _context.Media.Where(x => x.Title.ToUpper().Contains(keyNormalize)).ToList();
+            return RedirectToPage("searchResults",new {results});
+        }
         
     }
 }

@@ -2,5 +2,21 @@
 @model MovieTimeStreaming.Pages.User.searchResultsModel
 @{
     Layout = "Shared/_Layout_User";
-    ViewData["Title"] = "Main";
+    ViewData["Title"] = "search results";
 }
+<div id="" class="d-flex flex-wrap justify-content-start m-5">
+@foreach (var item in Model.results)
+{
+    
+        <span class="card ms-2 mt-2" style="width: 15rem">
+            <span class="card-body">
+                <img style="max-width: 100%" src="@item.mediaImg" alt=""/>
+                <h5 class="">@item.Title</h5>
+                <p class="mb-0">@item.Genre</p>
+                <p class="mb-0">@item.mediaType</p>
+                <a href="ViewMedia?id=@item.ID" class=" btn my-btn" style="width: 90%">View @item.mediaType page</a>
+                <a href="videoPlayer?id=@item.ID" class="btn my-btn mt-2" style="width: 90%">Watch</a>
+            </span>
+        </span>
+}
+</div>

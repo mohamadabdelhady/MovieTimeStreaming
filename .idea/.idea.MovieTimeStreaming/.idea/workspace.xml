@@ -7,14 +7,21 @@
   <component name="ChangeListManager">
     <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MediaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MediaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/ExternalLogin.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/SignUp.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/searchResults.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/searchResults.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +47,8 @@
     <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Pages/User/searchResults.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pages/User/searchResults.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/17a25bf4cd58852e31b6bc798fef1d6289441360eea1912bf89a9b4fd337a3/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9645d321fe8d42a1118ffc62492ad850e891b8ff24bfa6d49533d2e0e83c6947/Queryable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af5e8f58e0cd43a56f652468b1080bbdbf4276e50cddad25571e6f22556715/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -152,7 +161,11 @@
       <workItem from="1669321216964" duration="16059000" />
       <workItem from="1669367827284" duration="36036000" />
       <workItem from="1669453496753" duration="11892000" />
-      <workItem from="1669574094687" duration="9734000" />
+      <workItem from="1669574094687" duration="14452000" />
+      <workItem from="1669628086954" duration="251000" />
+      <workItem from="1669629206487" duration="419000" />
+      <workItem from="1669629638313" duration="34000" />
+      <workItem from="1669629683296" duration="1808000" />
     </task>
     <servers />
   </component>
