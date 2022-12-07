@@ -18,6 +18,7 @@ namespace MovieTimeStreaming.Data
         public DbSet<Reviews> Reviews { get; set; }
         public DbSet<WatchHistory> WatchHistory { get; set; }
          public DbSet<MediaBookmarks> MediaBookmarks { get; set; }
+         public DbSet<MediaEpisodes> MediaEpisodes { get; set; }
         
     }
 }

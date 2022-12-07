@@ -4,6 +4,7 @@
     Layout = "Shared/_Layout_User";
     ViewData["Title"] = "search results";
 }
+<h2 class="ms-4 mt-2">Search results: @Model.results.Count</h2>
 <div id="" class="d-flex flex-wrap justify-content-start m-5">
 @foreach (var item in Model.results)
 {

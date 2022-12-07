@@ -22,7 +22,7 @@
                 <p class="mb-0">{{item['genre']}}</p>
                 <p class="mb-0">{{item['mediaType']}}</p>
                 <a :href="'ViewMedia?id='+item['id']" class=" btn my-btn" style="width: 90%">View {{item['mediaType']}} page</a>
-                <a :href="'videoPlayer?id='+item['id']" class="btn my-btn mt-2" style="width: 90%">Watch</a>
+                <a :href="'videoPlayer?id='+item['id']" class="btn my-btn mt-2" style="width: 90%" v-if="item['mediaType']!='Tv'&&item['mediaType']!='Anime'">Watch</a>
             </span>
         </span>
     </div>

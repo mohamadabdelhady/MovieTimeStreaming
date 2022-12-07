@@ -7,15 +7,26 @@
   <component name="ChangeListManager">
     <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/TvShows.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/MediaEpisodes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/User/UserBookmarks.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/UserBookmarks.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Media.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Media.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/MediaEpisodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/MediaEpisodes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/Main.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/Main.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/ViewMedia.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/User/searchResults.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +169,11 @@
       <workItem from="1669628086954" duration="251000" />
       <workItem from="1669629206487" duration="419000" />
       <workItem from="1669629638313" duration="34000" />
-      <workItem from="1669629683296" duration="11316000" />
+      <workItem from="1669629683296" duration="11414000" />
+      <workItem from="1669662984956" duration="4240000" />
+      <workItem from="1669810016204" duration="642000" />
+      <workItem from="1670265630915" duration="3183000" />
+      <workItem from="1670418323493" duration="605000" />
     </task>
     <servers />
   </component>

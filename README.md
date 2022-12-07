@@ -3,7 +3,7 @@
 <p>
 A subscription-based service, that allow user to stream a big collection of movies, tv shows, documentaries and anime in exchange for a subscription.</p>
 <h2>preview of the website </h2>
-<a href="#"><p>Screenshots</p></a>
+<a href="https://drive.google.com/drive/folders/1l5UHyXc2ZJX7ewY2baft69kNhJkANvpF?usp=share_link"><p>Screenshots</p></a>
 <h2>What is this website built with</h2>
 <ul>
 <li>

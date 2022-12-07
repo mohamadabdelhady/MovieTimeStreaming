@@ -53,10 +53,12 @@ main{
   border: 1px solid rgba(42, 98, 116, 0.55);
   margin-bottom: 15vh;
 }
-
-.form-control:focus{
+form-select{
+  border: 1px solid rgba(42, 98, 116, 0.55);
+}
+.form-control:focus,.form-select:focus{
   border-color: #2A6274;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(225, 207, 169, 0.5);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(225, 207, 169, 0.5) !important;
 }
 a{
   text-decoration: none;

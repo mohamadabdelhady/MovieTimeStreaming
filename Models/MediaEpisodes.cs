@@ -11,5 +11,6 @@ namespace MovieTimeStreaming.Models
         public string MediaSrc { get; set; }
         public int WatchCount { get; set; } = 0;
         public DateTime CreatedAt { get; set; }
+        public int SeasonNum { get; set; }
     }
 }

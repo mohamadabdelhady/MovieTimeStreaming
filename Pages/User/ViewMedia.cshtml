@@ -18,7 +18,10 @@
         {
             <a href="#" onclick="event.preventDefault(); addOrRemoveBookmark()" id="bookmark" class="btn my-btn" style="width: 100%">Bookmark</a>
         }
-        <a asp-page="videoPlayer" style="width: 100%" asp-route-id="@Model.MediaId" class="btn my-btn mt-2">Watch</a>
+        @if (@Model.MediaType != "Tv"&&@Model.MediaType!="Anime")
+        {
+            <a asp-page="videoPlayer" style="width: 100%" asp-route-id="@Model.MediaId" class="btn my-btn mt-2">Watch</a>
+        }
     </div>
     <div class="col-6">
         <h2>@Model.MediaTitle</h2>
@@ -33,6 +36,36 @@
 </div>
 <div class="row container mt-5">
     <div class="col-12">
+        <div class="m-4">
+        @if (@Model.SeasonNum != "")
+        {
+            <hr/>
+            <select asp-for="@Model.ChosenSeason" class="form-select" aria-label="Default select example" style="width: 40%">
+                @for (var i = 1; i <= int.Parse(@Model.SeasonNum); i++)
+                {
+                    @if (i == 1)
+                    {
+                        <option  value="@i" selected>Season @i</option>
+                    }
+                    else
+                    {
+                        <option value="@i">Season @i</option>
+                    }
+                }
+            </select>
+            @foreach (var episode in @Model.EpisodesList)
+            {
+                if (episode.SeasonNum==Model.ChosenSeason)
+                {
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <span class="card" style="width: 5rem">
+                            <p>Episode @episode.EpisodeNum</p>
+                        </span>
+                    </div>
+                }
+            }
+        }
+        </div>
         <div id="app">
             <div>
                 <div>
@@ -77,7 +110,7 @@
                         </a>
                         <span style="float: right;">
                             <div class="">
-                                <span class="fa fa-star checked"  v-if="review.userRating>=1"></span>
+                                <span class="fa fa-star checked" v-if="review.userRating>=1"></span>
                                 <span class="fa fa-star " v-else></span>
                                 <span class="fa fa-star checked " v-if="review.userRating>=2"></span>
                                 <span class="fa fa-star " v-else></span>
@@ -93,7 +126,7 @@
                         <p class="pt-2" style="padding-left: 60px;">{{review.userReview}}</p>
                         <div><a href="#" v-on:click.prevent="deleteReview" class="me-3" style="color: #753939">Delete</a><a href="">Edit</a></div>
                     </div>
-                    
+
                 </div>
                 <hr>
                 <p class=" mt-4">What other Users think of the @Model.MediaType.</p>
