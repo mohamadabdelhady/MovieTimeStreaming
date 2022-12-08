@@ -1,5 +1,6 @@
 ﻿@page
 @using Microsoft.AspNetCore.Identity
+@using NuGet.Protocol
 @inject UserManager<ApplicationUser> UserManager
 @model MovieTimeStreaming.Pages.User.ViewMediaModel
 @{var CurrentUser = UserManager.GetUserAsync(User);}
@@ -18,7 +19,7 @@
         {
             <a href="#" onclick="event.preventDefault(); addOrRemoveBookmark()" id="bookmark" class="btn my-btn" style="width: 100%">Bookmark</a>
         }
-        @if (@Model.MediaType != "Tv"&&@Model.MediaType!="Anime")
+        @if (@Model.SeasonNum==0)
         {
             <a asp-page="videoPlayer" style="width: 100%" asp-route-id="@Model.MediaId" class="btn my-btn mt-2">Watch</a>
         }
@@ -36,38 +37,36 @@
 </div>
 <div class="row container mt-5">
     <div class="col-12">
-        <div class="m-4">
-        @if (@Model.SeasonNum != "")
-        {
-            <hr/>
-            <select asp-for="@Model.ChosenSeason" class="form-select" aria-label="Default select example" style="width: 40%">
-                @for (var i = 1; i <= int.Parse(@Model.SeasonNum); i++)
-                {
-                    @if (i == 1)
-                    {
-                        <option  value="@i" selected>Season @i</option>
-                    }
-                    else
-                    {
-                        <option value="@i">Season @i</option>
-                    }
-                }
-            </select>
-            @foreach (var episode in @Model.EpisodesList)
-            {
-                if (episode.SeasonNum==Model.ChosenSeason)
-                {
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <span class="card" style="width: 5rem">
-                            <p>Episode @episode.EpisodeNum</p>
-                        </span>
-                    </div>
-                }
-            }
-        }
-        </div>
+        
         <div id="app">
             <div>
+            <div class="m-4 overflow-scroll" style="height: 320px;">
+                    @if (@Model.SeasonNum != 0)
+                    {
+                        <hr/>
+                        <select id="selectSeason" v-on:input="getEpisodes" class="form-select" aria-label="Default select example" style="width: 40%">
+                            @for (var i = 1; i <=@Model.SeasonNum; i++)
+                            {
+                                @if (i == 1)
+                                {
+                                    <option  value="@i" selected>Season @i</option>
+                                }
+                                else
+                                {
+                                    <option value="@i">Season @i</option>
+                                }
+                            }
+                        </select>
+                       
+                        <div class="d-flex flex-wrap justify-content-start m-4">
+                            <span v-for="(item,index) in currentSeasonEp" class="card p-2 ms-2 mb-2" style="width: 8rem">
+                                <p>Episode {{item.episodeNum}}</p>
+                                <p>title {{item.title}}</p>
+                                <a :href="'VideoPlayer?id='+item.id+'&series=1'"  class="stretched-link"></a>
+                            </span>
+                      </div>
+                    }
+                    </div>
                 <div>
                     <div v-if="!my_review.length" class="review p-2">
                         <p class="usersRate">What did you think of this @Model.MediaType</p>
@@ -187,6 +186,7 @@ is = false;
  
 const { createApp } = Vue
       createApp({
+     
         data() {
             return {
                         AllReviews: [],
@@ -196,9 +196,13 @@ const { createApp } = Vue
                         my_rating: "",
                         user_review: "",
                         my_review: [],
+                        episodes:"",
+                        currentSeasonEp:[]
+                       
                     }
             },
             methods: {
+           
                     get_reviews() {
                         axios.get('/api/review/@Model.MediaId/getAll'+'?page=' + this.page).then(response => {
                             $.each(response.data, (key, v) => {
@@ -291,11 +295,28 @@ const { createApp } = Vue
                             {
                                 this.$emit('update_review');
                             },
+                             getEpisodes()
+                                        {
+                                            let chosen=document.getElementById('selectSeason').value;
+                                             console.log(chosen)
+                                              this.currentSeasonEp=[];
+                                            this.episodes.forEach(item=>{
+                                               if (item.seasonNum==chosen) 
+                                                   {
+                                                      
+                                                       this.currentSeasonEp.push(item);
+                                                      
+
+                                                   }
+                                           });
+                                        },
                            
                 },
                 mounted() {
                     this.get_reviews();
                     this.get_my_review();
+                    this.episodes=@Json.Serialize(Model.EpisodesList);
+                    this.getEpisodes();
                         
                 }, 
   }).mount('#app')

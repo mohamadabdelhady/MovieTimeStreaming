@@ -20,7 +20,7 @@ namespace MovieTimeStreaming.Models
         public double MediaDuration { get; set; }
         public string MediaSrc { get; set; }
         public int WatchCount { get; set; } = 0;
-        public string SeasonsCount { get; set; } = null;
+        public int SeasonsCount { get; set; }
 
     }
     

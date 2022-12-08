@@ -4,7 +4,7 @@ namespace MovieTimeStreaming.Models
     {
         [Key]
         public int ID { get; set; }
-
+        public string Title { get; set; }
         public string SeriesMediaId { get; set; }
         public int EpisodeNum { get; set; }
         public double MediaDuration { get; set; }

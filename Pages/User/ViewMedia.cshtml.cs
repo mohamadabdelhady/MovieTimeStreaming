@@ -20,7 +20,7 @@ namespace MovieTimeStreaming.Pages.User
         public string MediaImg { get; set; }
         public float rating { get; set; }
         public int IsBookmarked { get; set; }
-        public string SeasonNum { get; set; }
+        public int SeasonNum { get; set; }
         public List<MediaEpisodes> EpisodesList { get; set; }
         public int ChosenSeason { get; set; }
 
