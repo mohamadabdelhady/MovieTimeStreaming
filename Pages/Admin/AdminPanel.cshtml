@@ -1,0 +1,21 @@
+﻿@page
+@model MovieTimeStreaming.Pages.Admin.AdminPanelModel
+@{
+    Layout = "Shared/_Layout_User";
+    ViewData["Title"] = "Admin Panel";
+}
+<div class="container">
+    <div class="card m-auto mt-5 p-4" style="width: 30rem" >
+        <h4 align="center">Admin Panel</h4>
+        <div align="center">
+            @if (User.IsInRole("SuperAdmin"))
+            {
+                <a asp-page="AddNewAdmin" class="btn my-btn" style="width: 15rem">Add new Admin</a>
+                <a asp-page="AddNewAdmin" class="btn my-btn mt-2" style="width: 15rem">Delete Admin</a>
+            }
+            <button class="btn my-btn mt-2" style="width: 15rem">Add new media</button>
+            <button class="btn my-btn mt-2" style="width: 15rem">Delete media</button>
+        </div>
+        
+    </div>
+</div>

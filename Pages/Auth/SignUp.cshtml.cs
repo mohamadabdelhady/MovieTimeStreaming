@@ -21,8 +21,8 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly IConfiguration _configuration;
-
-        public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger,IConfiguration configuration)
+         private readonly RoleManager<IdentityRole> _roleManager;
+        public SignUpModel(IUserStore<ApplicationUser> userStore,SignInManager<ApplicationUser> signInManager,UserManager<ApplicationUser> userManager,ILogger<SignUpModel> logger,IConfiguration configuration, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _logger = logger;
@@ -30,6 +30,7 @@ namespace MovieTimeStreaming.Pages.Auth
             _userStore = userStore;
             _emailStore = GetEmailStore();
             _configuration = configuration;
+            _roleManager = roleManager;
         }
         [BindProperty]
         public InputModel Input { get; set; }

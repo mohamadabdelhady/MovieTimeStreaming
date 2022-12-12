@@ -17,46 +17,63 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<div class="loader p-5 d-none" id="wait" align="center"><img src="../Asset/film-reel-loader.gif"/></div>
+<div class="loader p-5 d-none" id="wait" align="center">
+    <img src="../Asset/film-reel-loader.gif"/>
+</div>
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-0">
+    <nav class="navbar navbar-expand-lg navbar-toggleable-lg border-bottom box-shadow mb-0">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="/Asset/MovieTimeLogo.png" alt="Logo" class=""></a>
+            <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <img src="/Asset/MovieTimeLogo.png" alt="Logo" class="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-bars" style="font-size:36px"></i>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
-                <div class="main-menu" asp-area="Auth">
-                    <a href="" class="main-btn" onclick="event.preventDefault(); view_menu();">
-                        <div>
-                            @{var CurrentUser = UserManager.GetUserAsync(User);}
-                            <p> <img src="@CurrentUser.Result.ProfileImage" id="userAvatar"><i class="arrow down"></i></p>
-                        </div>
-                    </a>
-                    <div class="menu-content" id="menu-content">
-                        <br>
-                        <p class="ms-3 user-name">@CurrentUser.Result.UserName</p><hr>
-                        @* <a class="dropdown-item" asp-page="profile">My profile</a> *@
-                        <a class="dropdown-item" asp-page="UserBookmarks">Bookmark list</a>
-                        <a class="dropdown-item" asp-page="settings">Settings</a>
-                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="ml-1">Sign out</span></a>
-                        <form id="logout-form" class="form-inline" asp-page="/Auth/LogOut" method="post">
+
+                <div class="navbar-collapse collapse d-lg-inline-flex align-items-center ">
+                    <div class="search-bar pe-2 me-2">
+                        <form class="navbar-nav" method="get" asp-page="searchResults">
+                            <input class="form-control " type="search" placeholder="Search titles" aria-label="Search" id="search-input" name="key">
                         </form>
-                        <br>
+                    </div>
+                    <div class="navCenter mt-2">
+                        <a asp-page="category" asp-route-category="Movie" class="pe-2 me-1">Movies</a>
+                        <a asp-page="category" asp-route-category="Tv" class="pe-2 me-1">Tv Shows</a>
+                        <a asp-page="category" asp-route-category="Anime" class="pe-2 me-1">Anime</a>
+                        <a asp-page="category" asp-route-category="Documentary" class="pe-2 me-1">Documentaries</a>
+                    </div>
+                    <div class="main-menu ms-auto ">
+                        <a href="" class="main-btn" onclick="event.preventDefault(); view_menu();">
+                            <div>
+                                @{
+                                    var CurrentUser = UserManager.GetUserAsync(User);
+                                }
+                                <p>
+                                    <img src="@CurrentUser.Result.ProfileImage" id="userAvatar"><i class="arrow down"></i>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="menu-content" style="margin-right: 20px;" id="menu-content">
+                            <br>
+                            <p class="ms-3 user-name">@CurrentUser.Result.UserName</p><hr>
+                            <a class="dropdown-item" asp-page="UserBookmarks">Bookmark list</a>
+                            <a class="dropdown-item" asp-page="settings">Settings</a>
+                            @if (User.IsInRole("SuperAdmin"))
+                            {
+                                <a class="dropdown-item" asp-page="/Admin/AdminPanel">Admin Panel</a>
+                            }
+                            <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <span class="ml-1">Sign out</span>
+                            </a>
+                            <form id="logout-form" class="form-inline" asp-page="/Auth/LogOut" method="post">
+                            </form>
+                            <br>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="navbar-collapse collapse d-sm-inline-flex align-items-center navCenter">
-                <div class="search-bar pe-2 me-2">
-                    <form class="navbar-nav" method="get" asp-page="searchResults">
-                        <input class="form-control " type="search" placeholder="Search titles" aria-label="Search" id="search-input" name="key" >
-                    </form>
-                </div>
-                <a asp-page="category" asp-route-category="Movie" class="pe-2 me-1">Movies</a>
-                <a asp-page="category" asp-route-category="Tv" class="pe-2 me-1">Tv Shows</a>
-                <a asp-page="category" asp-route-category="Anime" class="pe-2 me-1">Anime</a>
-                <a asp-page="category" asp-route-category="Documentary" class="pe-2 me-1">Documentaries</a>
+
             </div>
         </div>
     </nav>

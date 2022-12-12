@@ -39,6 +39,7 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Pages\ExternalLoginCallback\ExternalLogin.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Admin\LogIn.cshtml" />
     </ItemGroup>
 
 </Project>

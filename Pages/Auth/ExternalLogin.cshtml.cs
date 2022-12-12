@@ -29,7 +29,6 @@ namespace MovieTimeStreaming.Pages.Auth
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
-        private readonly IEmailSender _emailSender;
         private readonly ILogger<ExternalLoginModel> _logger;
         private readonly IConfiguration _configuration;
 
@@ -38,7 +37,6 @@ namespace MovieTimeStreaming.Pages.Auth
             UserManager<ApplicationUser> userManager,
             IUserStore<ApplicationUser> userStore,
             ILogger<ExternalLoginModel> logger,
-            IEmailSender emailSender,
             IConfiguration configuration
             )
         {
@@ -47,7 +45,6 @@ namespace MovieTimeStreaming.Pages.Auth
             _userStore = userStore;
             _emailStore = GetEmailStore();
             _logger = logger;
-            _emailSender = emailSender;
             _configuration = configuration;
         }
 
@@ -106,6 +103,7 @@ namespace MovieTimeStreaming.Pages.Auth
             if (result.Succeeded)
             {
                 _logger.LogInformation("{Name} logged in with {LoginProvider} provider.", info.Principal.Identity.Name, info.LoginProvider);
+                
                 return LocalRedirect(returnUrl);
             }
             if (result.IsLockedOut)
@@ -154,7 +152,6 @@ namespace MovieTimeStreaming.Pages.Auth
                     if (result.Succeeded)
                     {
                         _logger.LogInformation("User created an account using {Name} provider.", info.LoginProvider);
-
                         var userId = await _userManager.GetUserIdAsync(user);
                         var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                         code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

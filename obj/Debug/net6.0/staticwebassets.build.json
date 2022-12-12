@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XSZpb84TlBxXfqVwrFp2QyWlEmhSfClT9aD+bVvTWzI=",
+  "Hash": "49rP2PDhNa82ORblBPaqGw3KrHZs1Jc4W3zzKrZwjU0=",
   "Source": "MovieTimeStreaming",
   "BasePath": "_content/MovieTimeStreaming",
   "Mode": "Default",
@@ -1239,40 +1239,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Asset/MediaPostersImg/example.jpg"
-    },
-    {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MediaStorage/Eternal.Sunshine.of.the.Spotless.Mind.2004.720p.BrRip.x264.BOKUTOX.YIFY.mp4",
-      "SourceId": "MovieTimeStreaming",
-      "SourceType": "Discovered",
-      "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
-      "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/MediaStorage/Eternal.Sunshine.of.the.Spotless.Mind.2004.720p.BrRip.x264.BOKUTOX.YIFY.mp4",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/MediaStorage/Eternal.Sunshine.of.the.Spotless.Mind.2004.720p.BrRip.x264.BOKUTOX.YIFY.mp4"
-    },
-    {
-      "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/MediaStorage/The Sopranos Season 1 Episode 01 - Pilot.avi",
-      "SourceId": "MovieTimeStreaming",
-      "SourceType": "Discovered",
-      "ContentRoot": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/",
-      "BasePath": "_content/MovieTimeStreaming",
-      "RelativePath": "Asset/MediaStorage/The Sopranos Season 1 Episode 01 - Pilot.avi",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Asset/MediaStorage/The Sopranos Season 1 Episode 01 - Pilot.avi"
     },
     {
       "Identity": "/mnt/d5c6792c-4125-4bf0-9ef5-ad863cfb346e/My_projects/Web Development/MovieTimeStreaming/wwwroot/Asset/Movie-banner.jpg",

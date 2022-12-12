@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDateOnlyTimeOnlyStringConverters();
+builder.Services.AddControllers();
 
 var configuration = builder.Configuration;
 
@@ -31,14 +32,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
-builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options =>
         options.SignIn.RequireConfirmedAccount = true
     )
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<ApplicationDbContext>() .AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>(TokenOptions.DefaultProvider);;
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Auth/Login";
+    options.AccessDeniedPath = "/Admin/AccessDenied";
 });
 
 builder.Services.AddRazorPages(options =>
@@ -60,7 +62,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-builder.Services.AddControllers();
+
 app.UseRouting();
 
 app.UseAuthentication();

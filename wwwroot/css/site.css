@@ -77,10 +77,11 @@ a:hover{
   font-size: small;
 }
 .main-menu{
-  margin-right: 10%;
-  position: absolute;
-  display: inline-block;
-  right: 0;
+  margin-right: 20px;
+  /*position: absolute;*/
+  /*display: inline-block;*/
+  /*right: 0;*/
+  float: right;
 }
 
 .arrow {
@@ -199,3 +200,9 @@ a:hover{
 .no-scroll {
   overflow: hidden;
 }
+/*@media only screen and (max-width: 768px) {*/
+/*  .main-menu{*/
+/*    margin-right: 120px;*/
+/*    position: relative;*/
+/*  }*/
+/*}*/
