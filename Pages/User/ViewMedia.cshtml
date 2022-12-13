@@ -40,10 +40,11 @@
         
         <div id="app">
             <div>
-            <div class="m-4 overflow-scroll" style="height: 320px;">
+            <div class="">
                     @if (@Model.SeasonNum != 0)
                     {
                         <hr/>
+                        <div class=" overflow-scroll m-4" style="height: 320px;">
                         <select id="selectSeason" v-on:input="getEpisodes" class="form-select" aria-label="Default select example" style="width: 40%">
                             @for (var i = 1; i <=@Model.SeasonNum; i++)
                             {
@@ -58,13 +59,14 @@
                             }
                         </select>
                        
-                        <div class="d-flex flex-wrap justify-content-start m-4">
-                            <span v-for="(item,index) in currentSeasonEp" class="card p-2 ms-2 mb-2" style="width: 8rem">
-                                <p>Episode {{item.episodeNum}}</p>
-                                <p>title {{item.title}}</p>
-                                <a :href="'VideoPlayer?id='+item.id+'&series=1'"  class="stretched-link"></a>
-                            </span>
-                      </div>
+                            <div class="d-flex flex-wrap justify-content-start m-4">
+                                <span v-for="(item,index) in currentSeasonEp" class="card p-2 ms-2 mb-2" style="width: 8rem">
+                                    <p>Episode {{item.episodeNum}}</p>
+                                    <p>title {{item.title}}</p>
+                                    <a :href="'VideoPlayer?id='+item.id+'&series=1'"  class="stretched-link"></a>
+                                </span>
+                            </div>
+                            </div>
                     }
                     </div>
                 <div>

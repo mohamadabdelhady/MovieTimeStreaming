@@ -3,7 +3,8 @@
 <p>
 A website that allow user to stream a big collection of movies, tv shows, documentaries and anime in exchange for a subscription.</p>
 <h2>preview of the website </h2>
-<a href="https://drive.google.com/drive/folders/1l5UHyXc2ZJX7ewY2baft69kNhJkANvpF?usp=share_link"><p>Screenshots</p></a>
+<p><a href="https://drive.google.com/drive/folders/1l5UHyXc2ZJX7ewY2baft69kNhJkANvpF?usp=share_link">Screenshots</a></p>
+<a href="https://youtu.be/sZTgb70QpKI">Video tour of the website</a>
 <h2>What is this website built with</h2>
 <ul>
 <li>
@@ -22,7 +23,11 @@ Back-end
 </ul>
 </li>
 </ul>
-
+<h2>
+How to set up the project after cloning it
+</h2>
+<ol>
+</ol>
 <h2>How to log in as admin</h2>
 <ul>
 <li>After you set up the project, go to login page.</li>
@@ -33,11 +38,8 @@ Back-end
 <li>In the Admin pannel page you can add new admin, delete excisting admin, add new media and delete existing media</li>
 <li>only the super admin can add new admin</li>
 </ul>
-<h2>
-How to set up the project after cloning it
-</h2>
-<ol>
-</ol>
+
+
 <h2>How to use the website</h2>
 <ul>
 
