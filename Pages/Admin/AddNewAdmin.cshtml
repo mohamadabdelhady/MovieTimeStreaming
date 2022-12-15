@@ -4,3 +4,25 @@
     Layout = "Shared/_Layout_User";
     ViewData["Title"] = "Add new Admin";
 }
+
+<div class="card m-auto mt-4" style="width: 50rem">
+    <div >
+        <h4 align="center">Users</h4>
+        <div class="card-body overflow-auto">
+
+            @foreach (var item in Model.usersList)
+            {
+                <p>
+                    <span class="me-4">Id: @item.GetType().GetProperty("Id").GetValue(item, null)</span>
+                    <span class="me-4">Name: @item.GetType().GetProperty("UserName").GetValue(item, null)</span>
+                    
+                    <form method="post" asp-page-handler="Add">
+                        <input value="@item.GetType().GetProperty("Id").GetValue(item, null)" name="id" hidden/>
+                        <button class="btn my-btn">Add</button>
+                    </form>
+                </p>
+            }
+
+        </div>
+    </div>
+</div>
