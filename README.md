@@ -29,6 +29,9 @@ How to set up the project after cloning it
 <ol>
 <li>you have to have .net 6 installed in your machine</li>
 <li>after cloning the project got to the project directoary and open terminal</li>
+<li>you have to initeiate asp.net secret to be able to use email system and 0autj <a href="https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-7.0&tabs=linux">Link to documentation</a></li>
+<li>to et up project 0auth set the secrets as described in the docoumentation<a href="https://learn.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-7.0&tabs=visual-studio">Link</a></li>
+<li>i used mailtrab to get to work you have to set up those two secrets after you make account on mailtrab, "smtp:userName","smtp:password"</li>
 <li>in the terminal type the command "dotnet run"</li>
 </ol>
 <h2>How to log in as admin</h2>
@@ -51,7 +54,7 @@ How to set up the project after cloning it
 <li>you can bookmark media from the view page and view from bookmark option form user menue</li>
 <li>you can change your user name of password from the setting oprion in user menue</li>
 <li>you can search form media by typing the title of the media in the search bar</li>
-<li>pres watch button to go direct to the viedeo player.</li>
+<li>press watch button to go direct to the viedeo player.</li>
 </ul>
 <h2>
 Licence
