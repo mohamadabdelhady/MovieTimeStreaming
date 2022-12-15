@@ -7,21 +7,19 @@
   <component name="ChangeListManager">
     <list default="true" id="86b028bf-330b-498e-92aa-12453d2cf458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieTimeStreaming/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Admin/AdminPanel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/AdminPanel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Admin/DeleteAdmin.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Admin/DeleteAdmin.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Shared/_Layout_User.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/MovieTimeStreaming.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/MovieTimeStreaming.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/MovieTimeStreaming.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/MovieTimeStreaming.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +184,7 @@
       <workItem from="1670976044969" duration="6673000" />
       <workItem from="1671027539811" duration="7692000" />
       <workItem from="1671039760163" duration="2579000" />
-      <workItem from="1671090803704" duration="1000000" />
+      <workItem from="1671090803704" duration="2254000" />
     </task>
     <servers />
   </component>
@@ -209,23 +207,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml.cs</url>
-          <line>50</line>
-          <properties documentPath="$PROJECT_DIR$/Pages/Admin/AddNewAdmin.cshtml.cs" initialLine="50" containingFunctionPresentation="method 'OnGet'">
-            <startOffsets>
-              <option value="2092" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2106" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#System.Security.Claims.ClaimsPrincipal" memberName="Identities" />

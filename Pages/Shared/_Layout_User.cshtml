@@ -60,7 +60,7 @@
                             <p class="ms-3 user-name">@CurrentUser.Result.UserName</p><hr>
                             <a class="dropdown-item" asp-page="UserBookmarks">Bookmark list</a>
                             <a class="dropdown-item" asp-page="settings">Settings</a>
-                            @if (User.IsInRole("SuperAdmin"))
+                            @if (User.IsInRole("SuperAdmin")||User.IsInRole("Admin"))
                             {
                                 <a class="dropdown-item" asp-page="/Admin/AdminPanel">Admin Panel</a>
                             }

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MovieTimeStreaming.Pages.Admin
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class DeleteAdminModel : PageModel
     
     {

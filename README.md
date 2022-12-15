@@ -27,6 +27,9 @@ Back-end
 How to set up the project after cloning it
 </h2>
 <ol>
+<li>you have to have .net 6 installed in your machine</li>
+<li>after cloning the project got to the project directoary and open terminal</li>
+<li>in the terminal type the command "dotnet run"</li>
 </ol>
 <h2>How to log in as admin</h2>
 <ul>
@@ -42,7 +45,13 @@ How to set up the project after cloning it
 
 <h2>How to use the website</h2>
 <ul>
-
+<li>after signing up either by copleating the signup form or using social media account you will land in the main page</li>
+<li>In the main page you will find the latest media in the website you can either view it page first to read other users review of it and to put your review after watching it</li>
+<li>you can navigate media by genera ftom the nav bar</li>
+<li>you can bookmark media from the view page and view from bookmark option form user menue</li>
+<li>you can change your user name of password from the setting oprion in user menue</li>
+<li>you can search form media by typing the title of the media in the search bar</li>
+<li>pres watch button to go direct to the viedeo player.</li>
 </ul>
 <h2>
 Licence

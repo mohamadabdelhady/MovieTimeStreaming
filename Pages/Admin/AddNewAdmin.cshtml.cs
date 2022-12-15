@@ -23,25 +23,7 @@ namespace MovieTimeStreaming.Pages.Admin
 
         public void OnGet()
         {
-            // var query = from user in _context.Users
-            //     join userRole in _context.UserRoles on user.Id equals userRole.UserId
-            //     select new { user.Id,user.UserName, userRole };
-            // var query2=from UserRole in query
-            //     join role in _context.Roles on UserRole.userRole.RoleId equals role.Id
-            //     where role.Name!="SuperAdmin"
-            //     select new {UserRole.Id,UserRole.UserName,role.Name};
-            //
-            // var CurrentUser = _userManager.GetUserAsync(User);
-            // var userId = CurrentUser.Result.Id;
-            // var query3 =
-            //     from user in _context.Users
-            //     join userRole in _context.UserRoles on user.Id equals userRole.UserId into temp
-            //     from userRole in temp.DefaultIfEmpty()
-            //     where user.Id != userId
-            //     select new
-            //     {
-            //         user.Id,user.UserName
-            //     };
+           
             var query3 = from user in _context.Users
                 join role in _context.UserRoles on user.Id equals role.UserId
                 select new { user.Id, user.UserName };
